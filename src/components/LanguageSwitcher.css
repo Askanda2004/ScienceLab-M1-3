@@ -1,0 +1,10 @@
+.language-switcher { position: fixed; z-index: 10; left: max(16px, env(safe-area-inset-left)); bottom: max(16px, env(safe-area-inset-bottom)); display: flex; align-items: center; gap: 7px; padding: 9px; border: 1px solid #d5dfed; border-radius: 19px; background: #ffffffed; box-shadow: 0 10px 28px #20365330; backdrop-filter: blur(12px); }
+.language-switcher button { min-height: 50px; padding: 10px 17px; border: 0; border-radius: 14px; background: transparent; color: #40577f; font-family: 'IBM Plex Sans Thai', 'Manrope', sans-serif; font-size: 16px; font-weight: 600; line-height: 1.5; letter-spacing: 0; cursor: pointer; transition: color .16s ease, background .16s ease, transform .16s ease, box-shadow .16s ease; }
+.language-switcher button:hover { background: #eef3fa; transform: translateY(-1px); }
+.language-switcher button.selected { background: linear-gradient(145deg, #3d5791, #29477f); color: #fff; box-shadow: 0 5px 12px #29477f36; }
+.language-switcher button:focus-visible { outline: 3px solid #91addb; outline-offset: 2px; }
+
+@media (max-width: 650px) {
+  .language-switcher { gap: 4px; padding: 6px; border-radius: 15px; }
+  .language-switcher button { min-height: 44px; padding: 8px 12px; border-radius: 11px; font-size: 13px; }
+}

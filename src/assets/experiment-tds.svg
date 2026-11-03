@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" fill="none">
+  <defs><linearGradient id="bg" x2="0" y2="1"><stop stop-color="#F0F1F7"/><stop offset="1" stop-color="#DFE4EF"/></linearGradient><linearGradient id="glass" x2="0" y2="1"><stop stop-color="#D9F2F2" stop-opacity=".8"/><stop offset="1" stop-color="#9FD5DC" stop-opacity=".8"/></linearGradient></defs>
+  <path fill="url(#bg)" d="M0 0h800v450H0z"/><circle cx="638" cy="97" r="44" fill="#FFF1C7"/><path d="M240 348h320" stroke="#BAC6D7" stroke-width="9" stroke-linecap="round"/>
+  <path d="M282 170h236l-25 164a35 35 0 0 1-35 30H342a35 35 0 0 1-35-30l-25-164Z" fill="url(#glass)" stroke="#6CAAB4" stroke-width="10"/>
+  <path d="M303 262h194l-11 72a35 35 0 0 1-35 30H342a35 35 0 0 1-35-30l-4-72Z" fill="#75C1C7" opacity=".78"/>
+  <path d="m384 72-13 117h42l-12 89 70-119h-45l27-87h-69Z" fill="#8FC64F" stroke="#6AA43D" stroke-width="8" stroke-linejoin="round"/>
+  <circle cx="344" cy="287" r="7" fill="#E8FFFF"/><circle cx="407" cy="314" r="6" fill="#E8FFFF"/><circle cx="457" cy="286" r="8" fill="#E8FFFF"/>
+</svg>

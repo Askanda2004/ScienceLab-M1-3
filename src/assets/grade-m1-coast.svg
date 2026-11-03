@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" fill="none">
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#9FD0EF"/><stop offset="1" stop-color="#E7F4F5"/></linearGradient>
+    <linearGradient id="sea" x2="0" y2="1"><stop stop-color="#69ABC8"/><stop offset="1" stop-color="#4F91B2"/></linearGradient>
+    <linearGradient id="sand" x2="0" y2="1"><stop stop-color="#F5D997"/><stop offset="1" stop-color="#EBC87D"/></linearGradient>
+  </defs>
+  <path fill="url(#sky)" d="M0 0h1200v310H0z"/>
+  <circle cx="1010" cy="106" r="48" fill="#FFF0B3"/>
+  <g fill="#fff" opacity=".9"><ellipse cx="250" cy="118" rx="96" ry="22"/><ellipse cx="288" cy="103" rx="72" ry="30"/><ellipse cx="335" cy="120" rx="72" ry="20"/><ellipse cx="720" cy="177" rx="83" ry="17"/><ellipse cx="754" cy="163" rx="58" ry="24"/><ellipse cx="793" cy="178" rx="60" ry="16"/></g>
+  <path fill="url(#sea)" d="M0 292c116-28 225 20 356-2 150-25 228-8 362 2 168 13 310-31 482-3v150H0z"/>
+  <g stroke="#DDF5F3" stroke-width="5" stroke-linecap="round" opacity=".7"><path d="M40 337h95m94 18h136m122-28h97m126 33h146m73-24h118m-1000 65h105m221-6h125m175 10h110m86-11h102"/></g>
+  <path fill="url(#sand)" d="M0 425c182-22 350 10 521-2 180-13 410-25 679 8v129H0z"/>
+  <g stroke="#765543" stroke-width="17" stroke-linecap="round"><path d="M253 468V325m740 131V280"/></g>
+  <g fill="#5D9B63"><path d="M253 328c-88-15-116-85-49-67 29 8 49 34 49 67Zm2-2c8-84 79-111 67-49-6 30-29 47-67 49Zm-1 4c-66-59-48-119-9-66 18 25 19 47 9 66Zm-2-3c-19-78-89-83-54-34 17 24 35 35 54 34Zm742-47c-80-17-101-73-39-59 25 6 40 26 39 59Zm2-2c9-70 69-94 58-42-5 25-26 40-58 42Zm-2 4c-58-48-42-99-8-55 15 21 16 39 8 55Z"/></g>
+  <g fill="#A56D4D"><path d="M55 449h78v61H55z"/><path d="m46 451 48-34 49 34z" fill="#C8734D"/><path d="M147 455h83v56h-83z"/><path d="m140 457 49-36 49 36z" fill="#8E6B57"/><path d="M269 461h73v50h-73z"/><path d="m261 463 45-31 44 31z" fill="#B76749"/></g>
+  <g fill="#F8E8C2"><path d="M69 470h13v18H69zm39 0h13v18h-13zm58 1h14v19h-14zm39 0h14v19h-14zm82 2h13v17h-13z"/></g>
+  <g transform="translate(550 378)"><path fill="#7CBAD0" d="M0 57h139l-20 35H24z"/><path fill="#FBFCF5" d="m67 0-9 60h19V0z"/><path fill="#F4BD61" d="m75 12 37 45H77z"/><path stroke="#4B7891" stroke-width="5" d="M16 65h105"/></g>
+</svg>
