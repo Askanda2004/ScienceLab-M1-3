@@ -1,6 +1,5 @@
 import { LabCard } from '../features/labs/components/LabCard'
 import { labs } from '../features/labs/data/labs'
-// import { AppHeader } from '../components/layout/AppHeader'
 
 export function HomePage() {
   const gradeLevels = [
@@ -11,12 +10,27 @@ export function HomePage() {
 
   return (
     <div className="app-shell">
-      {/* <AppHeader /> */}
       <main className="page-content">
         <section className="welcome" aria-labelledby="welcome-title">
-          <p className="eyebrow">เรียนรู้ผ่านการลงมือทำ</p>
-          <h1 id="welcome-title">ยินดีต้อนรับสู่ห้องทดลอง</h1>
-          <p className="welcome-copy">เลือกการทดลอง แล้วเริ่มสำรวจวิทยาศาสตร์ได้จากทุกอุปกรณ์</p>
+          <div className="welcome-copy-block">
+            {/* <p className="welcome-badge"><span aria-hidden="true">🧪</span> ยินดีต้อนรับนักวิทยาศาสตร์รุ่นเยาว์</p> */}
+            <h1 id="welcome-title">เข้าห้องทดลอง<br />แล้วมา <span>ค้นหาปริศนา</span> กัน!</h1>
+            {/* <p className="welcome-copy">ลองทดลองเอง สังเกตผล แล้วไขปริศนาของสารรอบตัวเราไปพร้อมกัน</p> */}
+            <a className="welcome-cta" href="/grades"><span aria-hidden="true"></span> เริ่มทดลองเลย</a>
+          </div>
+          <div className="welcome-art" aria-hidden="true">
+            <svg viewBox="0 0 520 560" role="presentation">
+              <ellipse className="flask-shadow" cx="260" cy="515" rx="205" ry="22" />
+              <path className="flask-glass" d="M205 55h110v135l151 248c22 36-4 82-46 82H100c-42 0-68-46-46-82l151-248V55Z" />
+              <path className="flask-liquid" d="m128 360 117-190h30l117 190 47 77c9 15-2 34-20 34H101c-18 0-29-19-20-34l47-77Z" />
+              <path className="flask-neck" d="M190 34h140c16 0 29 13 29 29v17H161V63c0-16 13-29 29-29Z" />
+              <circle className="flask-bubble bubble-one" cx="213" cy="344" r="17" />
+              <circle className="flask-bubble bubble-two" cx="306" cy="300" r="25" />
+              <path className="flask-highlight" d="m138 380 75-122" />
+              <path className="flask-star star-one" d="m414 130 13 32 32 13-32 13-13 32-13-32-32-13 32-13 13-32Z" />
+              <path className="flask-star star-two" d="m91 228 9 22 22 9-22 9-9 22-9-22-22-9 22-9 9-22Z" />
+            </svg>
+          </div>
         </section>
         <section className="labs-section" id="labs" aria-labelledby="labs-title">
           <div className="section-heading">
@@ -32,7 +46,7 @@ export function HomePage() {
                 <div className="grade-heading">
                   <span className="grade-number">{level.grade}</span>
                   <div>
-                    <h1 className="grade-label">มัธยมศึกษาปีที่ {index + 1}</h1>
+                    <p className="grade-label">มัธยมศึกษาปีที่ {index + 1}</p>
                     <h3 id={`grade-${index + 1}`}>{level.title}</h3>
                   </div>
                 </div>

@@ -1,0 +1,58 @@
+.grade-select-page { min-height: 100vh; position: relative; overflow: hidden; color: #29477f; background: #dfe7ec; font-family: 'Manrope', 'IBM Plex Sans Thai', sans-serif; }
+.lab-room-backdrop { position: absolute; inset: 0; overflow: hidden; background: linear-gradient(180deg, #eff6f9 0 54%, #91a9b8 55% 69%, #ddd1b8 70% 100%); }
+.lab-room-backdrop::before { content: ''; position: absolute; inset: 10% -3% 34%; background: repeating-linear-gradient(90deg, #f5f8f7 0 21%, #ccd4d8 21.3% 21.8%, #eaf0ef 22% 43%), linear-gradient(#f5f8f7, #c2ced2); filter: blur(8px); opacity: .92; }
+.lab-room-backdrop::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, #ffffff4f, #ffffff15 46%, #27394730); backdrop-filter: blur(2px); }
+.room-window { position: absolute; z-index: 1; top: 13%; width: 19%; height: 35%; border: 10px solid #d6dee0; background: linear-gradient(#a8d1e6, #d8e8e8); filter: blur(5px); }
+.window-one { left: 5%; }
+.window-two { left: 26%; }
+.room-shelf { position: absolute; z-index: 1; top: 20%; right: 5%; width: 23%; height: 34%; border: 12px solid #d2d9dc; background: repeating-linear-gradient(90deg, #fff7 0 12%, transparent 12.2% 14%), repeating-linear-gradient(0deg, #d0dae0 0 22%, #eff3f3 22.5% 24%); filter: blur(7px); }
+.room-counter { position: absolute; z-index: 1; left: -2%; right: -2%; bottom: 13%; height: 23%; border-top: 14px solid #657987; background: repeating-linear-gradient(90deg, #d5c8ae 0 12%, #bcae97 12.3% 12.8%, #d8ccb7 13% 25%); filter: blur(6px); }
+.room-flasks { position: absolute; z-index: 1; right: 32%; bottom: 36%; display: flex; align-items: end; gap: 22px; filter: blur(6px); opacity: .7; }
+.room-flasks span { width: 42px; height: 94px; border: 7px solid #579aaa; border-top-width: 4px; border-radius: 8px 8px 19px 19px; background: linear-gradient(transparent 44%, #75cbb0 45%); }
+.room-flasks span:nth-child(2) { height: 126px; border-color: #b68d5b; background: linear-gradient(transparent 42%, #f1ba68 43%); }
+.room-flasks span:nth-child(3) { height: 72px; border-color: #8a79b4; background: linear-gradient(transparent 44%, #af9bd8 45%); }
+.grade-select-content { position: relative; z-index: 2; width: min(100%, 1660px); min-height: 100vh; display: flex; flex-direction: column; justify-content: center; margin: 0 auto; padding: 86px 34px 42px; }
+.grade-select-back { position: absolute; top: 28px; left: 34px; z-index: 3; display: inline-flex; align-items: center; gap: 9px; margin: 0; padding: 9px 16px; border: 1px solid #d9e2ed; border-radius: 999px; background: #fff; box-shadow: 0 5px 16px #233b5030; color: #29477f; font-size: 23px; font-weight: 800; transition: transform .16s ease, box-shadow .16s ease; }
+.grade-select-back span { font-size: 25px; line-height: 1; }
+.grade-select-back:hover { transform: translateX(-3px); box-shadow: 0 8px 20px #233b5040; }
+.grade-select-heading { margin: 0 auto 25px; padding: 14px 25px; border: 1px solid #fff; border-radius: 19px; background: #ffffffdf; box-shadow: 0 10px 35px #34495b1a; text-align: center; }
+.grade-select-kicker { color: #43899b; font-size: 13px; font-weight: 800; letter-spacing: 1px; }
+.grade-select-heading h1 { margin: 2px 0 0; color: #29477f; font-size: clamp(32px, 4vw, 52px); letter-spacing: -1px; line-height: 1.2; }
+.grade-select-heading p { margin: 6px 0 0; color: #71839a; font-size: 15px; }
+.grade-choice-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; align-items: stretch; }
+.grade-choice-link { display: flex; min-width: 0; color: inherit; text-decoration: none; }
+.grade-choice { min-width: 0; overflow: hidden; display: flex; flex-direction: column; border: 1px solid #ffffffa8; border-radius: 26px; background: #f5bf68; box-shadow: 0 18px 36px #263b4a36; transition: transform .2s ease, box-shadow .2s ease; }
+.grade-choice-link .grade-choice { width: 100%; }
+.grade-choice-link:hover .grade-choice { transform: translateY(-5px); box-shadow: 0 24px 44px #263b4a45; }
+.grade-choice h2 { margin: 0; padding: 11px 14px; color: #29477f; font-size: clamp(19px, 2vw, 28px); line-height: 1.35; text-align: center; }
+.grade-choice img { display: block; width: 100%; height: clamp(180px, 22vw, 280px); object-fit: cover; border-block: 4px solid #ffffff72; }
+.grade-choice-footer { min-height: 82px; flex: 1; display: flex; align-items: center; justify-content: center; padding: 12px 18px 18px; }
+.grade-choice-footer h3 { margin: 0; color: #29477f; font-size: clamp(21px, 2vw, 30px); line-height: 1.35; text-align: center; }
+.grade-choice-link:focus-visible { outline: 4px solid #29477f; outline-offset: 4px; border-radius: 28px; }
+.grade-choice:focus-within { outline: 3px solid #29477f; outline-offset: 3px; }
+
+@media (max-width: 850px) {
+  .grade-select-content { justify-content: flex-start; padding: 90px 22px 38px; }
+  .grade-select-back { top: 22px; left: 22px; }
+  .grade-select-heading { margin-bottom: 20px; }
+  .grade-choice-grid { gap: 14px; }
+  .grade-choice h2 { font-size: 17px; }
+  .grade-choice img { height: 190px; }
+  .grade-choice-footer { min-height: 72px; padding-inline: 11px; }
+  .room-flasks { right: 18%; }
+}
+@media (max-width: 620px) {
+  .grade-select-content { padding: 78px 16px 32px; }
+  .grade-select-back { top: 16px; left: 16px; padding: 8px 13px; font-size: 19px; }
+  .grade-select-back span { font-size: 22px; }
+  .grade-select-heading { width: 100%; margin-bottom: 17px; padding: 13px; border-radius: 16px; }
+  .grade-select-heading h1 { font-size: 30px; }
+  .grade-select-heading p { font-size: 13px; }
+  .grade-choice-grid { grid-template-columns: 1fr; gap: 15px; }
+  .grade-choice { display: grid; grid-template-columns: 37% minmax(0, 1fr); border-radius: 19px; }
+  .grade-choice h2 { grid-column: 1 / -1; padding: 9px 10px; font-size: 17px; }
+  .grade-choice img { grid-column: 1; grid-row: 2 / 4; height: 100%; min-height: 145px; border: 0; border-right: 3px solid #ffffff72; object-fit: cover; }
+  .grade-choice-footer { grid-column: 2; grid-row: 2 / 4; min-height: 0; padding: 12px; }
+  .grade-choice-footer h3 { font-size: 19px; }
+  .lab-room-backdrop::before { inset: 12% -20% 30%; }
+}

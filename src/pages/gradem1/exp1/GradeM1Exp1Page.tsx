@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import { LanguageSwitcher } from '../../../components/LanguageSwitcher'
+import { BackButton } from '../../../components/navigation/BackButton'
+import { NextButton } from '../../../components/navigation/NextButton'
 import boilingIllustration from '../../../assets/experiment-boiling.svg'
 import densityIllustration from '../../../assets/experiment-density.svg'
 import tdsIllustration from '../../../assets/experiment-tds.svg'
@@ -87,9 +89,7 @@ export function GradeM1Exp1Page() {
 
       <div className="exp1-content">
         <header className="exp1-header">
-          <a className="exp1-back" href="/" aria-label={copy.back}>
-            <span className="exp1-back-icon" aria-hidden="true">‹</span> {copy.back}
-          </a>
+          <BackButton className="exp1-back" href="/grades" label={copy.back} />
           <h1>{copy.pageTitle}</h1>
         </header>
 
@@ -124,9 +124,11 @@ export function GradeM1Exp1Page() {
                   <p>{copy.mystery}: {experiment.question}</p>
                   <span className="experiment-tag">{experiment.name}</span>
                 </div>
-                <button className="experiment-start" type="button">
-                  {copy.start} <span aria-hidden="true">›</span>
-                </button>
+                <NextButton
+                  className="experiment-start"
+                  label={copy.start}
+                  href={index === 0 ? '/gradem1/exp1/objectives' : index === 1 ? '/gradem1/exp2' : index === 2 ? '/gradem1/exp3' : undefined}
+                />
               </article>
             ))}
           </section>

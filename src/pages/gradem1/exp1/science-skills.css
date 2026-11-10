@@ -1,0 +1,48 @@
+.science-skills-panel {
+  min-width: 0;
+  min-height: 530px;
+  padding: 18px 23px;
+  border: 6px solid #ee8e55;
+  border-radius: 27px;
+  background: #fff;
+  box-shadow: 0 12px 30px #26384c2b;
+}
+
+.science-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.science-skill-card {
+  min-height: 190px;
+  padding: 20px 22px;
+  border-radius: 16px;
+  background: #fcebd9;
+}
+
+.science-skill-card-2, .science-skill-card-3 { background: #e1effa; }
+.science-skill-heading { display: grid; grid-template-columns: 50px minmax(0, 1fr); align-items: center; gap: 14px; }
+.science-skill-heading span { width: 48px; height: 48px; display: grid; place-items: center; border-radius: 15px; background: #f07d50; color: #fff; font-size: 26px; font-weight: 800; }
+.science-skill-heading h2 { margin: 0; color: #29477f; font-size: clamp(18px, 1.65vw, 25px); font-weight: 800; line-height: 1.25; }
+.science-skill-card p { margin: 24px 0 0; color: #3f4e70; font-size: clamp(16px, 1.65vw, 24px); line-height: 1.55; }
+
+@media (max-width: 900px) {
+  .science-skills-panel { min-height: 0; }
+  .science-skills-grid { grid-template-columns: 1fr 1fr; }
+  .science-skill-card { min-height: 175px; }
+}
+
+@media (max-width: 600px) {
+  .science-skills-panel { padding: 11px; border-width: 4px; border-radius: 19px; }
+  .science-skills-grid { grid-template-columns: 1fr; gap: 10px; }
+  .science-skill-card { min-height: 0; padding: 14px; border-radius: 13px; }
+  .science-skill-heading { grid-template-columns: 40px minmax(0, 1fr); gap: 10px; }
+  .science-skill-heading span { width: 38px; height: 38px; border-radius: 12px; font-size: 20px; }
+  .science-skill-heading h2 { font-size: 16px; }
+  .science-skill-card p { margin-top: 13px; font-size: 14px; }
+}

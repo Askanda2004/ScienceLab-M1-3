@@ -7,10 +7,8 @@ export function LabCard({ lab }: Props) {
 
   return (
     <article className="lab-card">
-      <div className={`lab-art ${lab.accent}`} aria-hidden="true">
-        <span className="lab-icon">{lab.icon}</span>
-        <span className="lab-orbit orbit-one" />
-        <span className="lab-orbit orbit-two" />
+      <div className={`lab-art ${lab.accent} has-image`} aria-hidden="true">
+        <img className="lab-art-image" src={lab.image} alt="" />
       </div>
       <div className="lab-card-body">
         <div className="lab-meta"><span>{lab.subject}</span><span>{lab.level}</span></div>

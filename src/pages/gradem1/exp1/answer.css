@@ -1,0 +1,50 @@
+.answer-page { min-height: 100vh; overflow-x: hidden; overflow-y: auto; }
+.answer-content { width: min(100%, 1740px); padding-top: 26px; padding-bottom: 42px; }
+.answer-header { margin-bottom: 22px; }
+.answer-title { min-height: 104px; }
+.answer-title h1 { margin: 0; color: #29477f; font-size: clamp(28px, 3vw, 44px); line-height: 1.2; }
+.answer-layout { align-items: stretch; }
+.answer-sidecard img { height: 145px; object-fit: contain; }
+.answer-main { min-width: 0; display: flex; flex-direction: column; }
+.answer-panel { min-width: 0; display: flex; flex-direction: column; gap: 14px; padding: clamp(17px, 1.6vw, 26px); border: 6px solid #ee8e55; border-radius: 27px; background: #fff; box-shadow: 0 12px 30px #26384c2b; }
+.answer-card { min-height: 180px; padding: 18px 20px; border-radius: 17px; }
+.answer-card-warm { background: #fcebd9; }
+.answer-card-cool { background: #e1effa; }
+.answer-card h2 { margin: 0 0 13px; color: #29477f; font-size: clamp(20px, 1.7vw, 30px); line-height: 1.35; }
+.answer-card h2 span { white-space: nowrap; }
+.answer-copy { display: grid; grid-template-columns: max-content minmax(0, 1fr); align-items: start; gap: 14px; }
+.answer-badge { padding: 5px 14px; border-radius: 12px; background: #f07d50; color: #fff; font-size: 18px; font-weight: 800; line-height: 1.3; }
+.answer-copy p { margin: 0; color: #3f4e70; font-size: clamp(16px, 1.5vw, 25px); line-height: 1.55; }
+.answer-prediction { margin: 0; font-size: clamp(16px, 1.4vw, 23px); font-weight: 800; line-height: 1.5; }
+.answer-prediction.is-correct { color: #438f57; }
+.answer-prediction.is-incorrect, .answer-prediction.has-no-prediction { color: #71809c; }
+.answer-actions { position: fixed; right: max(28px, env(safe-area-inset-right)); bottom: max(24px, env(safe-area-inset-bottom)); z-index: 6; display: flex; justify-content: flex-end; }
+.answer-next { display: inline-flex; align-items: center; gap: 11px; padding: 14px 29px; border: 0; border-radius: 999px; background: #29477f; color: #fff; font: inherit; font-size: 20px; font-weight: 800; text-decoration: none; transition: transform .16s ease, background .16s ease; }
+.answer-next:hover { transform: translateY(-2px); background: #355996; }
+.answer-next:focus-visible { outline: 4px solid #f4b65f; outline-offset: 3px; }
+
+@media (max-width: 900px) {
+  .answer-header { grid-template-columns: 1fr; gap: 14px; }
+  .answer-layout { grid-template-columns: 1fr; }
+  .answer-sidecard { display: grid; grid-template-columns: 150px 1fr; text-align: left; }
+  .answer-sidecard h2 { grid-column: 1 / -1; text-align: center; }
+  .answer-sidecard img { grid-row: 2 / 4; height: 120px; }
+  .answer-sidecard h3 { align-self: end; }
+  .answer-sidecard .pisa-badge { justify-self: start; }
+}
+@media (max-width: 600px) {
+  .answer-content { padding: 16px 14px 30px; }
+  .answer-header { gap: 12px; margin-bottom: 15px; }
+  .answer-title { min-height: 80px; gap: 11px; padding: 12px; border-radius: 17px; }
+  .answer-title .objectives-number { flex-basis: 48px; width: 48px; height: 48px; font-size: 21px; }
+  .answer-title h1 { font-size: 24px; }
+  .answer-panel { gap: 10px; padding: 11px; border-width: 4px; border-radius: 19px; }
+  .answer-actions { right: max(14px, env(safe-area-inset-right)); bottom: max(14px, env(safe-area-inset-bottom)); }
+  .answer-card { min-height: 0; padding: 13px; border-radius: 13px; }
+  .answer-card h2 { margin-bottom: 10px; font-size: 17px; }
+  .answer-copy { grid-template-columns: 1fr; gap: 7px; }
+  .answer-badge { justify-self: start; padding: 4px 10px; font-size: 14px; }
+  .answer-copy p { font-size: 14px; }
+  .answer-prediction { font-size: 14px; }
+  .answer-next { gap: 9px; padding: 12px 22px; font-size: 17px; }
+}

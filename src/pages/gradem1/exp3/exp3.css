@@ -1,0 +1,11 @@
+.exp3-title { align-items: center; }
+.exp3-title p { margin: 4px 0 0; color: #596684; font-size: clamp(15px, 1.6vw, 22px); line-height: 1.35; }
+.exp3-objectives-panel { min-height: 530px; }
+
+@media (max-width: 900px) {
+  .exp3-objectives-panel { min-height: 0; }
+}
+
+@media (max-width: 600px) {
+  .exp3-title p { font-size: 13px; }
+}

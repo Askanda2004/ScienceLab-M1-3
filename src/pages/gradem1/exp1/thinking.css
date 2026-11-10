@@ -1,0 +1,36 @@
+.thinking-panel {
+  min-width: 0;
+  min-height: 530px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 23px 17px;
+  border: 6px solid #ee8e55;
+  border-radius: 27px;
+  background: #fff;
+  box-shadow: 0 12px 30px #26384c2b;
+}
+
+.thinking-intro { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(260px, .95fr); gap: 16px; align-items: stretch; }
+.thinking-intro > img { display: block; width: 100%; height: 270px; border-radius: 3px; object-fit: cover; object-position: center 62%; }
+.thinking-question { padding: 20px 22px; border-radius: 16px; background: #fcebd9; }
+.thinking-question p { margin: 0 0 10px; color: #b94f2c; font-size: clamp(18px, 1.65vw, 24px); font-weight: 800; }
+.thinking-question h2 { margin: 0; color: #29477f; font-size: clamp(22px, 2.05vw, 31px); line-height: 1.35; }
+.thinking-story { margin: 20px 0 20px; color: #3f4e70; font-size: clamp(17px, 1.7vw, 24px); line-height: 1.65; }
+.thinking-start { gap: 10px; }
+.thinking-start::before { content: '▶'; font-size: .8em; }
+
+@media (max-width: 900px) {
+  .thinking-panel { min-height: 0; }
+  .thinking-intro { grid-template-columns: minmax(0, 1.1fr) minmax(220px, .9fr); }
+  .thinking-intro > img { height: 230px; }
+}
+
+@media (max-width: 600px) {
+  .thinking-panel { padding: 11px; border-width: 4px; border-radius: 19px; }
+  .thinking-intro { grid-template-columns: 1fr; gap: 10px; }
+  .thinking-intro > img { height: 190px; }
+  .thinking-question { padding: 15px; border-radius: 13px; }
+  .thinking-question p { margin-bottom: 6px; font-size: 16px; }
+  .thinking-question h2 { font-size: 20px; }
+  .thinking-story { margin: 13px 2px 18px; font-size: 15px; }
+}
