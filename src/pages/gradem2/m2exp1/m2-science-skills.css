@@ -1,0 +1,30 @@
+.m2-science-skills-page .m2-objectives-layout { min-height: 0; }
+.m2-science-skills-page .m2-science-skills-panel { flex: initial; }
+.m2-science-skills-title-copy { min-width: 0; }
+.m2-science-skills-title-copy h1 { margin: 0; color: #29477f; font-size: clamp(28px, 3vw, 44px); line-height: 1.2; letter-spacing: -.8px; }
+.m2-science-skills-title-copy p { margin: 5px 0 0; color: #5c6886; font-size: clamp(15px, 1.55vw, 24px); line-height: 1.35; }
+.m2-science-skills-panel { min-height: 530px; padding: 18px 23px; }
+.m2-science-skills-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; height: 100%; margin: 0; padding: 0; list-style: none; }
+.m2-science-skill-card { min-height: 190px; padding: 20px 22px; border-radius: 16px; background: #fcebd9; }
+.m2-science-skill-card-2, .m2-science-skill-card-3 { background: #e1effa; }
+.m2-science-skill-heading { display: grid; grid-template-columns: 50px minmax(0, 1fr); align-items: center; gap: 14px; }
+.m2-science-skill-heading span { width: 48px; height: 48px; display: grid; place-items: center; border-radius: 15px; background: #f07d50; color: #fff; font-size: 26px; font-weight: 800; }
+.m2-science-skill-heading h2 { margin: 0; color: #29477f; font-size: clamp(18px, 1.65vw, 25px); font-weight: 800; line-height: 1.25; }
+.m2-science-skill-card p { margin: 24px 0 0; color: #3f4e70; font-size: clamp(16px, 1.65vw, 24px); line-height: 1.55; }
+@media (max-width: 900px) {
+  .m2-science-skills-panel { min-height: 0; }
+  .m2-science-skills-grid { grid-template-columns: 1fr 1fr; }
+  .m2-science-skill-card { min-height: 175px; }
+}
+@media (max-width: 600px) {
+  .m2-objectives-title { align-items: center; }
+  .m2-science-skills-title-copy h1 { font-size: 21px; }
+  .m2-science-skills-title-copy p { font-size: 12px; }
+  .m2-science-skills-panel { padding: 11px; border-width: 4px; border-radius: 19px; }
+  .m2-science-skills-grid { grid-template-columns: 1fr; gap: 10px; }
+  .m2-science-skill-card { min-height: 0; padding: 14px; border-radius: 13px; }
+  .m2-science-skill-heading { grid-template-columns: 40px minmax(0, 1fr); gap: 10px; }
+  .m2-science-skill-heading span { width: 38px; height: 38px; border-radius: 12px; font-size: 20px; }
+  .m2-science-skill-heading h2 { font-size: 16px; }
+  .m2-science-skill-card p { margin-top: 13px; font-size: 14px; }
+}

@@ -1,0 +1,89 @@
+.m2-exp2-design-page .m2-objectives-layout { min-height: 0; }
+
+.m2-exp2-design-page .m2-design-panel {
+  min-width: 0;
+  min-height: 530px;
+  flex: initial;
+  padding: 18px 23px;
+  border: 6px solid #ee8e55;
+  border-radius: 27px;
+  background: #fff;
+  box-shadow: 0 5px 0 rgba(200, 103, 57, .22);
+}
+
+.m2-exp2-design-page .m2-objectives-sidecard h3 { white-space: pre-line; }
+.m2-exp2-design-art {
+  width: min(100%, 210px);
+  height: 145px;
+  display: grid;
+  place-items: center;
+  font-size: 112px;
+  line-height: 1;
+}
+
+.m2-design-question {
+  margin: 0 0 16px;
+  padding: 18px 22px;
+  border-radius: 16px;
+  background: #fcebd9;
+  color: #29477f;
+  font-size: clamp(20px, 2vw, 30px);
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+.m2-design-instruction {
+  margin: 0 0 12px;
+  color: #b94f2c;
+  font-size: clamp(16px, 1.7vw, 24px);
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.m2-design-variable-list { display: grid; gap: 10px; }
+.m2-design-variable-row {
+  min-height: 78px;
+  display: grid;
+  grid-template-columns: minmax(165px, 220px) minmax(0, 1fr);
+  align-items: center;
+  gap: 16px;
+  padding: 10px 18px;
+  border-radius: 15px;
+  background: #eef2f7;
+}
+
+.m2-design-variable-row span {
+  min-height: 52px;
+  display: grid;
+  place-items: center;
+  padding: 7px 12px;
+  border-radius: 18px;
+  background: #29477f;
+  color: #fff;
+  font-size: clamp(16px, 1.6vw, 22px);
+  font-weight: 800;
+  text-align: center;
+}
+
+.m2-design-variable-row p {
+  margin: 0;
+  color: #414b68;
+  font-size: clamp(16px, 1.7vw, 24px);
+  line-height: 1.45;
+}
+
+.m2-exp2-design-page .m2-design-start { min-width: 230px; }
+
+@media (max-width: 900px) {
+  .m2-exp2-design-page .m2-design-panel { min-height: 0; }
+  .m2-exp2-design-art { grid-row: 2 / 4; width: 155px; height: 125px; font-size: 90px; }
+}
+
+@media (max-width: 600px) {
+  .m2-exp2-design-page .m2-design-panel { padding: 14px; border-width: 4px; border-radius: 20px; }
+  .m2-design-question { padding: 14px; }
+  .m2-design-variable-row { grid-template-columns: 1fr; gap: 8px; padding: 12px; }
+  .m2-design-variable-row span { min-height: 42px; }
+  .m2-exp2-design-art { width: 105px; height: 104px; font-size: 66px; }
+  .m2-exp2-design-page .m2-design-start { min-width: 0; }
+}

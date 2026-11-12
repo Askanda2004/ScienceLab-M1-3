@@ -31,7 +31,14 @@ const content = {
 
 export function Experiment2AnswerPage() {
   const [language, setLanguage] = useState<Language>('th')
+  const [revealedAnswers, setRevealedAnswers] = useState([false, false])
   const text = content[language]
+  const questionLabel = language === 'th' ? 'คำถาม' : language === 'ms' ? 'Soalan' : 'Question'
+  const hideAnswerLabel = language === 'th' ? 'ซ่อนเฉลย' : language === 'ms' ? 'Sembunyikan jawapan' : 'Hide answer'
+
+  const toggleAnswer = (index: number) => {
+    setRevealedAnswers((current) => current.map((revealed, item) => item === index ? !revealed : revealed))
+  }
 
   return (
     <main className="objectives-page answer-page">
@@ -56,12 +63,18 @@ export function Experiment2AnswerPage() {
           <div className="answer-main">
             <section className="answer-panel" aria-label={text.title}>
               <article className="answer-card answer-card-warm">
-                <h2>1. {text.questionOne}</h2>
-                <div className="answer-copy"><span className="answer-badge">{text.answer}</span><p>{text.answerOne}</p></div>
+                <div className="answer-question"><span className="answer-section-label">{questionLabel}</span><h2>1. {text.questionOne}</h2></div>
+                <button className="answer-reveal" type="button" aria-expanded={revealedAnswers[0]} onClick={() => toggleAnswer(0)}>
+                  {revealedAnswers[0] ? hideAnswerLabel : text.answer}
+                </button>
+                {revealedAnswers[0] && <div className="answer-copy"><span className="answer-section-label">{text.answer}</span><p>{text.answerOne}</p></div>}
               </article>
               <article className="answer-card answer-card-cool">
-                <h2>2. {text.questionTwo}</h2>
-                <div className="answer-copy"><span className="answer-badge">{text.answer}</span><p>{text.answerTwo}</p></div>
+                <div className="answer-question"><span className="answer-section-label">{questionLabel}</span><h2>2. {text.questionTwo}</h2></div>
+                <button className="answer-reveal" type="button" aria-expanded={revealedAnswers[1]} onClick={() => toggleAnswer(1)}>
+                  {revealedAnswers[1] ? hideAnswerLabel : text.answer}
+                </button>
+                {revealedAnswers[1] && <div className="answer-copy"><span className="answer-section-label">{text.answer}</span><p>{text.answerTwo}</p></div>}
               </article>
             </section>
             <div className="answer-actions">

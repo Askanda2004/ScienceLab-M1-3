@@ -1,0 +1,72 @@
+.m2-objectives-page { min-height: 100vh; position: relative; overflow: hidden; color: #34466f; font-family: 'Manrope', 'IBM Plex Sans Thai', sans-serif; }
+.m2-objectives-background { position: absolute; inset: 0; background-image: linear-gradient(180deg, #dceaf4a6 0%, #d4e9f1a1 48%, #4b759a36 70%, #eddbad52 100%), url('../../../assets/grade-m2-street.svg'); background-size: cover; background-position: center; filter: saturate(.88); }
+.m2-objectives-background::after { content: ''; position: absolute; inset: 0; background: #f4f8f39c; backdrop-filter: blur(3px); }
+.m2-objectives-content { position: relative; z-index: 1; width: min(100%, 1740px); min-height: 100vh; margin: 0 auto; padding: 26px 32px 34px; }
+.m2-objectives-header { display: grid; grid-template-columns: minmax(220px, .55fr) minmax(0, 2.45fr); gap: 24px; align-items: center; margin-bottom: 22px; }
+.m2-objectives-back { justify-self: start; display: inline-flex; align-items: center; gap: 12px; padding: 12px 22px; border: 2px solid #344b7d; border-radius: 999px; background: #fff; box-shadow: 0 5px 12px #26384c30; color: #29477f; font-size: 20px; font-weight: 800; transition: transform .16s ease, box-shadow .16s ease; }
+.m2-objectives-back:hover { transform: translateX(-3px); box-shadow: 0 8px 18px #26384c3d; }
+.m2-objectives-back span { font-size: 29px; line-height: 1; }
+.m2-objectives-title { min-height: 104px; display: flex; align-items: center; gap: 16px; padding: 16px 22px; border: 1px solid #fff; border-radius: 22px; background: #ffffffed; box-shadow: 0 8px 24px #26384c1c; }
+.m2-objectives-number { flex: 0 0 62px; width: 62px; height: 62px; display: grid; place-items: center; border: 3px solid #fff; border-radius: 50%; background: #f07d50; color: #fff; font-size: 33px; font-weight: 800; box-shadow: 0 0 0 1px #ef936d; }
+.m2-objectives-title h1 { margin: 0; color: #29477f; font-size: clamp(28px, 3vw, 44px); line-height: 1.25; letter-spacing: -.8px; }
+.m2-objectives-layout { display: grid; grid-template-columns: minmax(230px, .55fr) minmax(0, 2.45fr); min-height: calc(100vh - 186px); gap: 24px; align-items: stretch; }
+.m2-objectives-page.m2-exp1-objectives-page .m2-objectives-layout,
+.m2-objectives-page.m2-exp2-objectives-page .m2-objectives-layout { min-height: 0; }
+.m2-objectives-sidecard { align-self: start; display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 15px 17px 20px; border-radius: 25px; background: #f5bf68; box-shadow: 0 10px 26px #26384c2b; text-align: center; }
+.m2-objectives-sidecard h2 { margin: 0; color: #29477f; font-size: 23px; }
+.m2-objectives-sidecard img { display: block; width: min(100%, 210px); height: 145px; border-radius: 15px; object-fit: cover; }
+.m2-objectives-sidecard h3 { margin: 0; max-width: 270px; color: #29477f; font-size: 21px; line-height: 1.35; }
+.m2-pisa-badge { margin-top: 6px; padding: 8px 15px; border-radius: 999px; background: #29477f; color: #fff; font-size: 12px; font-weight: 800; }
+.m2-objectives-main { min-width: 0; display: flex; flex-direction: column; }
+.m2-objectives-panel { min-width: 0; flex: 1; display: flex; flex-direction: column; padding: 20px 23px 17px; border: 6px solid #ee8e55; border-radius: 27px; background: #fff; box-shadow: 0 12px 30px #26384c2b; }
+.m2-objectives-page.m2-exp1-objectives-page .m2-objectives-panel,
+.m2-objectives-page.m2-exp2-objectives-page .m2-objectives-panel { flex: initial; }
+.m2-objectives-panel h2 { margin: 0 0 4px; color: #29477f; font-size: clamp(20px, 2vw, 29px); line-height: 1.35; }
+.m2-objectives-intro { margin: 0 0 17px; color: #465578; font-size: clamp(14px, 1.4vw, 19px); line-height: 1.65; }
+.m2-learning-prompt { margin: 0 0 17px; color: #b94f2c; font-size: clamp(16px, 1.6vw, 22px); font-weight: 800; line-height: 1.5; }
+.learning-prompt { margin: 0 0 17px; color: #b94f2c; font-size: clamp(16px, 1.6vw, 22px); font-weight: 800; line-height: 1.5; }
+.m2-objectives-list { display: grid; gap: 12px; margin: 0; padding: 0; list-style: none; }
+.m2-objectives-list li { min-height: 88px; display: grid; grid-template-columns: 48px 1fr; align-items: center; gap: 14px; padding: 13px 16px; border-radius: 16px; background: #fcebd9; }
+.m2-objectives-list li:nth-child(even) { background: #fff7ef; }
+.m2-objective-index { width: 44px; height: 44px; display: grid; place-items: center; border-radius: 14px; background: #f07d50; color: #fff; font-size: 22px; font-weight: 800; }
+.m2-objectives-list p { margin: 0; color: #3f4e70; font-size: clamp(14px, 1.35vw, 19px); line-height: 1.55; }
+.m2-objectives-actions { position: fixed; right: max(28px, env(safe-area-inset-right)); bottom: max(12px, env(safe-area-inset-bottom)); z-index: 5; display: flex; justify-content: flex-end; }
+.m2-objectives-next { display: inline-flex; align-items: center; gap: 11px; padding: 14px 29px; border: 0; border-radius: 999px; background: #29477f; color: #fff; font: inherit; font-size: 20px; font-weight: 800; cursor: pointer; transition: transform .16s ease, background .16s ease; }
+.m2-objectives-next:hover { transform: translateY(-2px); background: #355996; }
+.m2-objectives-next span { font-size: 23px; line-height: .8; }
+
+@media (max-width: 900px) {
+  .m2-objectives-header { grid-template-columns: 1fr; gap: 14px; }
+  .m2-objectives-layout { grid-template-columns: 1fr; min-height: 0; }
+  .m2-objectives-sidecard { display: grid; grid-template-columns: 155px 1fr; text-align: left; }
+  .m2-objectives-sidecard h2 { grid-column: 1 / -1; text-align: center; }
+  .m2-objectives-sidecard img { grid-row: 2 / 4; height: 125px; }
+  .m2-objectives-sidecard h3 { align-self: end; }
+  .m2-pisa-badge { justify-self: start; }
+  .m2-objectives-panel { min-height: 440px; }
+}
+@media (max-width: 600px) {
+  .m2-objectives-content { padding: 16px 14px 30px; }
+  .m2-objectives-header { gap: 12px; margin-bottom: 15px; }
+  .m2-objectives-back { gap: 9px; padding: 9px 16px; font-size: 17px; }
+  .m2-objectives-back span { font-size: 25px; }
+  .m2-objectives-title { min-height: 80px; gap: 11px; padding: 12px; border-radius: 17px; }
+  .m2-objectives-number { flex-basis: 48px; width: 48px; height: 48px; font-size: 25px; }
+  .m2-objectives-title h1 { font-size: 25px; }
+  .m2-objectives-layout { gap: 14px; }
+  .m2-objectives-sidecard { grid-template-columns: 105px 1fr; gap: 8px 12px; padding: 12px; border-radius: 18px; }
+  .m2-objectives-sidecard h2 { font-size: 18px; }
+  .m2-objectives-sidecard img { width: 105px; height: 104px; }
+  .m2-objectives-sidecard h3 { font-size: 17px; }
+  .m2-pisa-badge { padding: 6px 10px; font-size: 10px; }
+  .m2-objectives-panel { min-height: 0; padding: 15px 13px 13px; border-width: 4px; border-radius: 19px; }
+  .m2-objectives-panel h2 { font-size: 18px; }
+  .m2-objectives-intro { margin-bottom: 12px; font-size: 13px; }
+  .m2-learning-prompt { margin-bottom: 12px; font-size: 14px; }
+  .m2-objectives-list { gap: 9px; }
+  .m2-objectives-list li { min-height: 74px; grid-template-columns: 38px 1fr; gap: 10px; padding: 10px; border-radius: 13px; }
+  .m2-objective-index { width: 36px; height: 36px; border-radius: 11px; font-size: 18px; }
+  .m2-objectives-list p { font-size: 13px; }
+  .m2-objectives-actions { right: max(16px, env(safe-area-inset-right)); bottom: max(10px, env(safe-area-inset-bottom)); }
+  .m2-objectives-next { gap: 9px; padding: 12px 22px; font-size: 17px; }
+}

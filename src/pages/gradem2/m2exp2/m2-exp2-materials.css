@@ -1,0 +1,8 @@
+.m2-exp2-materials-page .m2-objectives-sidecard h3 { white-space: pre-line; }
+.m2-exp2-materials-art { width: min(100%, 210px); height: 145px; display: grid; place-items: center; font-size: 112px; line-height: 1; }
+@media (max-width: 900px) {
+  .m2-exp2-materials-art { grid-row: 2 / 4; width: 155px; height: 125px; font-size: 90px; }
+}
+@media (max-width: 600px) {
+  .m2-exp2-materials-art { width: 105px; height: 104px; font-size: 66px; }
+}

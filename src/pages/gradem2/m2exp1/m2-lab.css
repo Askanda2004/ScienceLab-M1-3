@@ -1,0 +1,114 @@
+.m2-exp1-lab-page { min-height: 100vh; height: 100vh; overflow-x: hidden; overflow-y: auto; }
+.m2-exp1-lab-page .m2-objectives-content { min-height: 100vh; padding-bottom: 26px; }
+.m2-exp1-lab-page .m2-objectives-header { margin-bottom: 14px; }
+.m2-exp1-lab-page .m2-objectives-title { min-height: 92px; }
+.m2-exp1-lab-page .m2-lab-layout { display: block; width: 100%; min-height: calc(100vh - 178px); }
+.m2-lab-sidecard { align-self: start; }
+.m2-lab-sidebar-art { width: 180px; height: 145px; display: grid; place-items: center; font-size: 100px; line-height: 1; }
+.m2-lab-workspace { width: 100%; min-width: 0; min-height: calc(100vh - 178px); display: grid; grid-template-columns: minmax(215px, .78fr) minmax(280px, 1.18fr) minmax(280px, .95fr); grid-template-rows: minmax(440px, 1fr) auto; gap: 13px; padding: 14px; border: 6px solid #ee8e55; border-radius: 27px; background: #fff; box-shadow: 0 12px 30px #26384c2b; }
+.m2-lab-control-panel, .m2-lab-simulation, .m2-lab-record-panel { min-width: 0; border-radius: 17px; }
+.m2-lab-control-panel { display: flex; flex-direction: column; gap: 10px; padding: 14px; background: #f1f3f7; }
+.m2-lab-control-panel h2, .m2-lab-record-panel h2 { margin: 0; color: #29477f; font-size: clamp(18px, 1.45vw, 23px); line-height: 1.3; }
+.m2-lab-solutes { display: grid; gap: 7px; }
+.m2-lab-solutes button { min-height: 42px; padding: 7px 10px; border: 0; border-radius: 12px; background: #fff; color: #29477f; font: inherit; font-size: 16px; font-weight: 800; cursor: pointer; }
+.m2-lab-solutes button.is-active { background: #e58b5b; color: #fff; }
+.m2-lab-solutes button:disabled { cursor: wait; }
+.m2-lab-control-panel h3 { margin: 2px 0 0; color: #29477f; font-size: 16px; }
+.m2-lab-control-panel h3 strong { color: #29477f; }
+.m2-lab-temperatures { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 5px; }
+.m2-lab-temperatures button { min-height: 48px; display: grid; place-items: center; align-content: center; gap: 1px; border: 0; border-radius: 11px; background: #e3f0e8; color: #33744d; font: inherit; font-size: 14px; font-weight: 800; cursor: pointer; }
+.m2-lab-temperatures button.is-active { background: #e58b5b; color: #fff; }
+.m2-lab-temperatures button.is-done:not(.is-active) { background: #d5eadc; color: #36724e; }
+.m2-lab-temperatures button small { font-size: 10px; }
+.m2-lab-add-count { display: flex; align-items: center; justify-content: center; gap: 7px; padding: 8px; border: 1px solid #344b7d; border-radius: 13px; background: #fff; color: #29477f; font-size: 13px; }
+.m2-lab-add-count strong { font-size: 20px; }
+.m2-lab-water { margin: 0; color: #687793; font-size: 13px; font-weight: 700; text-align: center; }
+.m2-lab-buttons { display: grid; gap: 7px; margin-top: auto; }
+.m2-lab-buttons button { min-height: 45px; padding: 8px 10px; border: 0; border-radius: 12px; font: inherit; font-size: 16px; font-weight: 800; cursor: pointer; }
+.m2-lab-add { background: #29477f; color: #fff; }
+.m2-lab-stir { border: 2px solid #29477f !important; background: #fff; color: #29477f; }
+.m2-lab-reset-trial { border: 1px solid #d6deea !important; background: #e4e8ef; color: #40527a; }
+.m2-lab-buttons button:disabled { opacity: .48; cursor: not-allowed; }
+
+.m2-lab-simulation { min-height: 0; display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 14px; background: #e2eff9; text-align: center; }
+.m2-lab-status { width: 100%; min-height: 43px; display: grid; place-items: center; padding: 6px 10px; border: 2px solid #344b7d; border-radius: 13px; background: #fff; color: #38734e; font-size: 14px; font-weight: 800; }
+.m2-lab-status.is-saturated { border-color: #e58b5b; background: #fff5e9; color: #b94f2c; }
+.m2-lab-status.is-dissolved { background: #e5f3e9; }
+.m2-lab-beaker { position: relative; width: 180px; height: 220px; margin: auto 0 0; }
+.m2-lab-beaker-glass { position: absolute; inset: 20px 20px 8px; z-index: 2; border: 6px solid #8298bd; border-top: 5px solid #8298bd; border-radius: 5px 5px 28px 28px; background: #ffffff30; box-shadow: inset 7px 0 0 #fff9; }
+.m2-lab-beaker-glass::before { content: ''; position: absolute; top: 0; left: -7px; width: calc(100% + 14px); height: 7px; border-radius: 5px; background: #8298bd; }
+.m2-lab-beaker-glass::after { content: ''; position: absolute; left: 0; right: 0; bottom: 22%; height: 2px; background: #8298bd88; box-shadow: 0 -38px #8298bd88, 0 -76px #8298bd88; }
+.m2-lab-beaker-liquid { position: absolute; z-index: 1; left: 30px; right: 30px; bottom: 14px; max-height: 68%; border-radius: 0 0 21px 21px; background: #bed5f2; transition: height .4s ease; }
+.m2-lab-beaker.is-sugar .m2-lab-beaker-liquid { background: #e3c777; }
+.m2-lab-beaker.is-salt .m2-lab-beaker-liquid { background: #c8e3eb; }
+.m2-lab-beaker.is-alum .m2-lab-beaker-liquid { background: #c8d9f1; }
+.m2-lab-solids { position: absolute; z-index: 3; left: 57px; right: 42px; bottom: 22px; height: 18px; }
+.m2-lab-solids i { position: absolute; bottom: 0; width: 9px; height: 8px; background: #fff; clip-path: polygon(50% 0,100% 50%,50% 100%,0 50%); }
+.m2-lab-solids i:nth-child(2) { left: 24px; bottom: 3px; }
+.m2-lab-solids i:nth-child(3) { left: 45px; }
+.m2-lab-stirrer { position: absolute; z-index: 4; left: 24px; right: 24px; top: 94px; height: 3px; border-radius: 5px; background: #fff; transform-origin: center; animation: m2-stir 1s ease-in-out infinite alternate; }
+.m2-lab-live-readout { width: 100%; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.m2-lab-live-readout div { display: grid; grid-template-columns: auto 1fr; align-items: center; column-gap: 6px; padding: 8px; border-radius: 12px; background: #fff; }
+.m2-lab-live-readout div > span { grid-row: span 2; font-size: 22px; }
+.m2-lab-live-readout strong { color: #29477f; font-size: 22px; }
+.m2-lab-live-readout small { color: #697894; font-size: 11px; }
+.m2-lab-feedback { width: 100%; margin: 0; padding: 9px 10px; border-radius: 12px; background: #fff5e6; color: #87502f; font-size: 13px; line-height: 1.45; }
+.m2-lab-record-panel { display: flex; flex-direction: column; gap: 8px; padding: 12px; background: #f5e6d5; }
+.m2-lab-record-heading { display: flex; align-items: center; gap: 7px; }
+.m2-lab-record-heading h2 { flex: 1; min-width: 0; padding: 9px 10px; border-radius: 13px; background: #34477f; color: #fff; font-size: 15px; text-align: center; }
+.m2-lab-record-heading button { min-height: 36px; padding: 6px 8px; border: 1px solid #d9c7b6; border-radius: 10px; background: #fffaf5; color: #8e4c2d; font: inherit; font-size: 11px; font-weight: 800; cursor: pointer; }
+.m2-lab-record-heading button:disabled { opacity: .48; cursor: not-allowed; }
+.m2-lab-record-table-wrap { overflow: hidden; border-radius: 12px; background: #fff8ef; }
+.m2-lab-record-table { width: 100%; border-collapse: separate; border-spacing: 0 4px; color: #34466f; font-size: 13px; text-align: center; }
+.m2-lab-record-table th, .m2-lab-record-table td { padding: 7px 4px; }
+.m2-lab-record-table thead th { color: #a4522b; font-size: 12px; }
+.m2-lab-record-table tbody tr { background: #fff; }
+.m2-lab-record-table tbody th { color: #29477f; text-align: left; }
+.m2-lab-record-table tbody tr.is-current { outline: 2px solid #e58b5b; outline-offset: -2px; }
+.m2-lab-chart-section { padding: 7px 8px 4px; border-radius: 12px; background: #fff; }
+.m2-lab-chart-section h3 { margin: 0; color: #29477f; font-size: 13px; text-align: center; }
+.m2-lab-chart { display: block; width: 100%; height: 125px; overflow: visible; }
+.m2-lab-chart line { stroke: #eadbcc; stroke-width: 1; }
+.m2-lab-chart text { fill: #806e62; font-size: 9px; text-anchor: end; }
+.m2-lab-chart .m2-lab-chart-x { text-anchor: middle; }
+.m2-lab-chart circle { fill: #34477f; stroke: #fff; stroke-width: 2; }
+.m2-lab-chart-line { fill: none; stroke: #34477f; stroke-width: 2.5; }
+.m2-lab-progress { margin: 1px 0 0; color: #29477f; font-size: 13px; font-weight: 800; text-align: center; }
+.m2-lab-progress-track { height: 8px; overflow: hidden; border-radius: 99px; background: #e8d3bd; }
+.m2-lab-progress-track span { display: block; height: 100%; border-radius: inherit; background: #e58b5b; transition: width .2s ease; }
+.m2-lab-results-button { min-height: 42px; display: grid; place-items: center; border: 0; border-radius: 99px; background: #cfd5e0; color: #78839a; font: inherit; font-size: 15px; font-weight: 800; text-decoration: none; }
+.m2-lab-results-button.is-ready { background: #34477f; color: #fff; }
+.m2-lab-result-hint { color: #776d66; font-size: 11px; text-align: center; }
+.m2-lab-workflow { grid-column: 1 / -1; margin: 0; color: #29477f; font-size: 14px; font-weight: 800; }
+.m2-lab-principles { margin: 14px 0 40px; padding: 14px 18px; border: 1px solid #d6e2e7; border-radius: 16px; background: #ffffffed; color: #465578; }
+.m2-lab-principles summary { color: #29477f; font-size: 17px; font-weight: 800; cursor: pointer; }
+.m2-lab-principles ol { display: grid; gap: 7px; margin: 10px 0; padding-left: 22px; font-size: 14px; line-height: 1.6; }
+.m2-lab-principles > p { margin: 0; font-size: 13px; line-height: 1.55; }
+@keyframes m2-stir { from { transform: rotate(-7deg); } to { transform: rotate(7deg); } }
+
+@media (max-width: 1150px) {
+  .m2-lab-workspace { grid-template-columns: minmax(210px, .8fr) minmax(260px, 1.1fr); grid-template-rows: auto auto; }
+  .m2-lab-record-panel { grid-column: 1 / -1; }
+  .m2-lab-record-table { font-size: 14px; }
+  .m2-lab-record-table th, .m2-lab-record-table td { padding: 9px 6px; }
+  .m2-lab-sidebar-art { grid-row: 2 / 4; width: 155px; height: 125px; font-size: 90px; }
+}
+@media (max-width: 700px) {
+  .m2-exp1-lab-page { height: auto; min-height: 100vh; overflow-y: auto; }
+  .m2-exp1-lab-page .m2-objectives-content { padding: 16px 12px 28px; }
+  .m2-exp1-lab-page .m2-objectives-header { grid-template-columns: 1fr; gap: 10px; }
+  .m2-exp1-lab-page .m2-objectives-title { min-height: 76px; }
+  .m2-exp1-lab-page .m2-lab-layout, .m2-exp1-lab-page .m2-lab-workspace { min-height: 0; }
+  .m2-lab-workspace { grid-template-columns: 1fr; gap: 10px; padding: 9px; border-width: 4px; border-radius: 19px; }
+  .m2-lab-control-panel, .m2-lab-simulation, .m2-lab-record-panel { padding: 12px; border-radius: 13px; }
+  .m2-lab-control-panel h2, .m2-lab-record-heading h2 { font-size: 15px; }
+  .m2-lab-record-heading { flex-wrap: wrap; }
+  .m2-lab-record-heading h2 { flex-basis: 100%; }
+  .m2-lab-solutes { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .m2-lab-solutes button { min-height: 42px; padding: 5px; font-size: 13px; }
+  .m2-lab-temperature { font-size: 14px; }
+  .m2-lab-beaker { transform: scale(.86); transform-origin: top center; height: 190px; margin-bottom: -8px; }
+  .m2-lab-chart { height: 145px; }
+  .m2-lab-workflow { font-size: 12px; }
+  .m2-lab-sidebar-art { grid-row: 2 / 4; width: 105px; height: 104px; font-size: 66px; }
+}

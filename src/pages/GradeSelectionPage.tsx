@@ -47,8 +47,8 @@ const pageCopy = {
 
 const gradeOptions = [
   { number: 1, image: coastImage, href: '/gradem1/exp1' },
-  { number: 2, image: circuitImage },
-  { number: 3, image: reactionImage },
+  { number: 2, image: circuitImage, href: '/gradem2/m2exp1' },
+  { number: 3, image: reactionImage, href: '/gradem3/m3exp1' },
 ]
 
 export function GradeSelectionPage() {

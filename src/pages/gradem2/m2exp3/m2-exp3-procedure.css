@@ -1,0 +1,12 @@
+.m2-exp3-procedure-page .m2-objectives-layout { min-height: 0; }
+.m2-exp3-procedure-page .m2-procedure-panel { min-height: 530px; flex: initial; padding: 18px 23px; }
+.m2-exp3-procedure-page .m2-objectives-sidecard h3 { white-space: pre-line; }
+.m2-exp3-procedure-art { width: min(100%, 210px); height: 145px; display: grid; place-items: center; font-size: 112px; line-height: 1; }
+@media (max-width: 900px) {
+  .m2-exp3-procedure-page .m2-procedure-panel { min-height: 0; }
+  .m2-exp3-procedure-art { grid-row: 2 / 4; width: 155px; height: 125px; font-size: 90px; }
+}
+@media (max-width: 600px) {
+  .m2-exp3-procedure-page .m2-procedure-panel { padding: 11px; border-width: 4px; border-radius: 19px; }
+  .m2-exp3-procedure-art { width: 105px; height: 104px; font-size: 66px; }
+}

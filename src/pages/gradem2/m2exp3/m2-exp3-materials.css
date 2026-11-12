@@ -1,0 +1,25 @@
+.m2-exp3-materials-page .m2-objectives-layout { min-height: 0; }
+.m2-exp3-materials-page .m2-objectives-sidecard h3 { white-space: pre-line; }
+.m2-exp3-materials-page .m2-materials-panel { min-width: 0; min-height: 530px; flex: initial; padding: 18px 23px; border: 6px solid #ee8e55; border-radius: 27px; }
+.m2-exp3-materials-page .m2-materials-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; height: 100%; margin: 0; padding: 0; list-style: none; }
+.m2-exp3-materials-page .m2-material-card { min-width: 0; min-height: 185px; display: flex; flex-direction: column; align-items: center; justify-content: space-between; gap: 10px; padding: 17px 14px; border-radius: 16px; background: #fcebd9; text-align: center; }
+.m2-exp3-materials-page .m2-material-card-2 { background: #e1effa; }
+.m2-exp3-materials-page .m2-material-card-3 { background: #e9edf3; }
+.m2-exp3-materials-page .m2-material-icon { font-size: clamp(38px, 4.5vw, 62px); line-height: 1.1; }
+.m2-exp3-materials-page .m2-material-card h2 { max-width: 100%; margin: 0; color: #29477f; font-size: clamp(16px, 1.55vw, 23px); font-weight: 800; line-height: 1.3; }
+.m2-exp3-materials-page .m2-material-card p { margin: 0; color: #b94f2c; font-size: clamp(17px, 1.7vw, 24px); line-height: 1.3; }
+.m2-exp3-materials-art { width: min(100%, 210px); height: 145px; display: grid; place-items: center; font-size: 112px; line-height: 1; }
+@media (max-width: 900px) {
+  .m2-exp3-materials-page .m2-materials-panel { min-height: 0; }
+  .m2-exp3-materials-page .m2-materials-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: auto; }
+  .m2-exp3-materials-page .m2-material-card { min-height: 165px; }
+  .m2-exp3-materials-art { grid-row: 2 / 4; width: 155px; height: 125px; font-size: 90px; }
+}
+@media (max-width: 600px) {
+  .m2-exp3-materials-page .m2-materials-panel { padding: 10px; border-width: 4px; border-radius: 19px; }
+  .m2-exp3-materials-page .m2-materials-grid { gap: 9px; }
+  .m2-exp3-materials-page .m2-material-card { min-height: 140px; gap: 7px; padding: 12px 8px; border-radius: 13px; }
+  .m2-exp3-materials-page .m2-material-icon { font-size: 36px; }
+  .m2-exp3-materials-page .m2-material-card h2, .m2-exp3-materials-page .m2-material-card p { font-size: 14px; }
+  .m2-exp3-materials-art { width: 105px; height: 104px; font-size: 66px; }
+}

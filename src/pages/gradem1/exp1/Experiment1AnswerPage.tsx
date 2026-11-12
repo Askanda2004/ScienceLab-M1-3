@@ -48,7 +48,14 @@ function readPrediction(): number | null {
 export function Experiment1AnswerPage() {
   const [language, setLanguage] = useState<Language>('th')
   const [prediction] = useState(readPrediction)
+  const [revealedAnswers, setRevealedAnswers] = useState([false, false])
   const copy = content[language]
+
+  const toggleAnswer = (index: number) => {
+    setRevealedAnswers((current) => current.map((revealed, item) => item === index ? !revealed : revealed))
+  }
+
+  const hideAnswerLabel = language === 'th' ? 'ซ่อนเฉลย' : language === 'ms' ? 'Sembunyikan jawapan' : 'Hide answer'
 
   return (
     <main className="objectives-page answer-page">
@@ -73,12 +80,18 @@ export function Experiment1AnswerPage() {
           <div className="answer-main">
           <section className="answer-panel" aria-label={copy.title}>
             <article className="answer-card answer-card-warm">
-              <h2>1. {copy.questionOne}</h2>
-              <div className="answer-copy"><span className="answer-badge">{copy.answer}</span><p>{copy.answerOne}</p></div>
+              <div className="answer-question"><span className="answer-section-label">{language === 'th' ? 'คำถาม' : language === 'ms' ? 'Soalan' : 'Question'}</span><h2>1. {copy.questionOne}</h2></div>
+              <button className="answer-reveal" type="button" aria-expanded={revealedAnswers[0]} onClick={() => toggleAnswer(0)}>
+                {revealedAnswers[0] ? hideAnswerLabel : copy.answer}
+              </button>
+              {revealedAnswers[0] && <div className="answer-copy"><span className="answer-section-label">{copy.answer}</span><p>{copy.answerOne}</p></div>}
             </article>
             <article className="answer-card answer-card-cool">
-              <h2>2. {copy.questionTwo}</h2>
-              <div className="answer-copy"><span className="answer-badge">{copy.answer}</span><p>{copy.answerTwo}</p></div>
+              <div className="answer-question"><span className="answer-section-label">{language === 'th' ? 'คำถาม' : language === 'ms' ? 'Soalan' : 'Question'}</span><h2>2. {copy.questionTwo}</h2></div>
+              <button className="answer-reveal" type="button" aria-expanded={revealedAnswers[1]} onClick={() => toggleAnswer(1)}>
+                {revealedAnswers[1] ? hideAnswerLabel : copy.answer}
+              </button>
+              {revealedAnswers[1] && <div className="answer-copy"><span className="answer-section-label">{copy.answer}</span><p>{copy.answerTwo}</p></div>}
             </article>
 
             <p className={`answer-prediction${prediction === 1 ? ' is-correct' : prediction === null ? ' has-no-prediction' : ' is-incorrect'}`}>

@@ -1,5 +1,35 @@
 import { HomePage } from '../pages/HomePage'
 import { GradeM1Exp1Page } from '../pages/gradem1/exp1/GradeM1Exp1Page'
+import { GradeM2Exp1Page } from '../pages/gradem2/m2exp1/GradeM2Exp1Page'
+import { M2Experiment1ObjectivesPage } from '../pages/gradem2/m2exp1/M2Experiment1ObjectivesPage'
+import { M2Experiment1LearningObjectivesPage } from '../pages/gradem2/m2exp1/M2Experiment1LearningObjectivesPage'
+import { M2Experiment1VocabularyPage } from '../pages/gradem2/m2exp1/M2Experiment1VocabularyPage'
+import { M2Experiment1ScienceSkillsPage } from '../pages/gradem2/m2exp1/M2Experiment1ScienceSkillsPage'
+import { M2Experiment1ThinkingPage } from '../pages/gradem2/m2exp1/M2Experiment1ThinkingPage'
+import { M2Experiment1MaterialsPage } from '../pages/gradem2/m2exp1/M2Experiment1MaterialsPage'
+import { M2Experiment1ProcedurePage } from '../pages/gradem2/m2exp1/M2Experiment1ProcedurePage'
+import { M2Experiment1PredictionPage } from '../pages/gradem2/m2exp1/M2Experiment1PredictionPage'
+import { M2Experiment1LabPage } from '../pages/gradem2/m2exp1/M2Experiment1LabPage'
+import { M2Experiment1ResultsPage } from '../pages/gradem2/m2exp1/M2Experiment1ResultsPage'
+import { M2Experiment1AnswerPage } from '../pages/gradem2/m2exp1/M2Experiment1AnswerPage'
+import { M2Experiment1PisaPage } from '../pages/gradem2/m2exp1/M2Experiment1PisaPage'
+import { M2Experiment1SummaryPage } from '../pages/gradem2/m2exp1/M2Experiment1SummaryPage'
+import { M2Experiment1ComparisonPage } from '../pages/gradem2/m2exp1/M2Experiment1ComparisonPage'
+import { M2Experiment2ObjectivesPage } from '../pages/gradem2/m2exp2/M2Experiment2ObjectivesPage'
+import { M2Experiment2VocabularyPage } from '../pages/gradem2/m2exp2/M2Experiment2VocabularyPage'
+import { M2Experiment2ScienceSkillsPage } from '../pages/gradem2/m2exp2/M2Experiment2ScienceSkillsPage'
+import { M2Experiment2ThinkingPage } from '../pages/gradem2/m2exp2/M2Experiment2ThinkingPage'
+import { M2Experiment2MaterialsPage } from '../pages/gradem2/m2exp2/M2Experiment2MaterialsPage'
+import { M2Experiment2ProcedurePage } from '../pages/gradem2/m2exp2/M2Experiment2ProcedurePage'
+import { M2Experiment2DesignPage } from '../pages/gradem2/m2exp2/M2Experiment2DesignPage'
+import { M2Experiment3ObjectivesPage } from '../pages/gradem2/m2exp3/M2Experiment3ObjectivesPage'
+import { M2Experiment3VocabularyPage } from '../pages/gradem2/m2exp3/M2Experiment3VocabularyPage'
+import { M2Experiment3ScienceSkillsPage } from '../pages/gradem2/m2exp3/M2Experiment3ScienceSkillsPage'
+import { M2Experiment3ThinkingPage } from '../pages/gradem2/m2exp3/M2Experiment3ThinkingPage'
+import { M2Experiment3MaterialsPage } from '../pages/gradem2/m2exp3/M2Experiment3MaterialsPage'
+import { M2Experiment3ProcedurePage } from '../pages/gradem2/m2exp3/M2Experiment3ProcedurePage'
+import { M2Experiment3PredictionPage } from '../pages/gradem2/m2exp3/M2Experiment3PredictionPage'
+import { GradeM3Exp1Page } from '../pages/gradem3/m3exp1/GradeM3Exp1Page'
 import { GradeSelectionPage } from '../pages/GradeSelectionPage'
 import { Experiment1ObjectivesPage } from '../pages/gradem1/exp1/Experiment1ObjectivesPage'
 import { Experiment1LearningPage } from '../pages/gradem1/exp1/Experiment1LearningPage'
@@ -177,6 +207,126 @@ export function App() {
 
   if (currentPath === '/gradem1/exp1') {
     return <GradeM1Exp1Page />
+  }
+
+  if (currentPath === '/gradem2/m2exp1') {
+    return <GradeM2Exp1Page />
+  }
+
+  if (currentPath === '/gradem2/m2exp1/objectives') {
+    return <M2Experiment1ObjectivesPage />
+  }
+
+  if (currentPath === '/gradem2/m2exp1/learning-objectives') {
+    return <M2Experiment1LearningObjectivesPage />
+  }
+
+  if (currentPath === '/gradem2/m2exp1/vocabulary') {
+    return <M2Experiment1VocabularyPage />
+  }
+
+  if (currentPath === '/gradem2/m2exp1/science-skills') {
+    return <M2Experiment1ScienceSkillsPage />
+  }
+
+  if (currentPath === '/gradem2/m2exp1/thinking') {
+    return <M2Experiment1ThinkingPage />
+  }
+
+  if (currentPath === '/gradem2/m2exp1/materials') {
+    return <M2Experiment1MaterialsPage />
+  }
+
+  if (currentPath === '/gradem2/m2exp1/procedure') {
+    return <M2Experiment1ProcedurePage />
+  }
+
+  if (currentPath === '/gradem2/m2exp1/prediction') {
+    return <M2Experiment1PredictionPage />
+  }
+
+  if (currentPath === '/gradem2/m2exp1/lab') {
+    return <M2Experiment1LabPage />
+  }
+
+  if (currentPath === '/gradem2/m2exp1/results') {
+    return <M2Experiment1ResultsPage />
+  }
+
+  if (currentPath === '/gradem2/m2exp1/answers') {
+    return <M2Experiment1AnswerPage />
+  }
+
+  if (currentPath === '/gradem2/m2exp1/pisa') {
+    return <M2Experiment1PisaPage />
+  }
+
+  if (currentPath === '/gradem2/m2exp1/summary') {
+    return <M2Experiment1SummaryPage />
+  }
+
+  if (currentPath === '/gradem2/m2exp1/comparison') {
+    return <M2Experiment1ComparisonPage />
+  }
+
+  if (currentPath === '/gradem2/m2exp2/objectives') {
+    return <M2Experiment2ObjectivesPage />
+  }
+
+  if (currentPath === '/gradem2/m2exp2/vocabulary') {
+    return <M2Experiment2VocabularyPage />
+  }
+
+  if (currentPath === '/gradem2/m2exp2/science-skills') {
+    return <M2Experiment2ScienceSkillsPage />
+  }
+
+  if (currentPath === '/gradem2/m2exp2/thinking') {
+    return <M2Experiment2ThinkingPage />
+  }
+
+  if (currentPath === '/gradem2/m2exp2/materials') {
+    return <M2Experiment2MaterialsPage />
+  }
+
+  if (currentPath === '/gradem2/m2exp2/procedure') {
+    return <M2Experiment2ProcedurePage />
+  }
+
+  if (currentPath === '/gradem2/m2exp2/design') {
+    return <M2Experiment2DesignPage />
+  }
+
+  if (currentPath === '/gradem2/m2exp3/objectives') {
+    return <M2Experiment3ObjectivesPage />
+  }
+
+  if (currentPath === '/gradem2/m2exp3/vocabulary') {
+    return <M2Experiment3VocabularyPage />
+  }
+
+  if (currentPath === '/gradem2/m2exp3/science-skills') {
+    return <M2Experiment3ScienceSkillsPage />
+  }
+
+  if (currentPath === '/gradem2/m2exp3/thinking') {
+    return <M2Experiment3ThinkingPage />
+  }
+
+  if (currentPath === '/gradem2/m2exp3/materials') {
+    return <M2Experiment3MaterialsPage />
+  }
+
+  if (currentPath === '/gradem2/m2exp3/procedure') {
+    return <M2Experiment3ProcedurePage />
+  }
+
+  if (currentPath === '/gradem2/m2exp3/prediction') {
+    return <M2Experiment3PredictionPage />
+  }
+
+  if (currentPath === '/gradem3/m3exp1') {
+    return <GradeM3Exp1Page />
   }
 
   if (currentPath === '/grades') {
