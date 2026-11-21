@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 790 416">
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#8eb3d5"/><stop offset="1" stop-color="#d9e2df"/></linearGradient>
+    <linearGradient id="road" x2="0" y2="1"><stop stop-color="#89877f"/><stop offset="1" stop-color="#615f5b"/></linearGradient>
+    <linearGradient id="glass" x2="0" y2="1"><stop stop-color="#b9c7ca"/><stop offset="1" stop-color="#8fa0a5"/></linearGradient>
+  </defs>
+  <path fill="#e2bd69" d="M0 0h790v5H0z"/>
+  <path fill="url(#sky)" d="M0 5h790v224H0z"/>
+  <g fill="#fff" opacity=".65">
+    <ellipse cx="33" cy="87" rx="57" ry="24"/><ellipse cx="42" cy="69" rx="42" ry="24"/><ellipse cx="4" cy="92" rx="65" ry="18"/>
+    <ellipse cx="335" cy="73" rx="43" ry="12"/><ellipse cx="353" cy="65" rx="25" ry="15"/>
+    <ellipse cx="528" cy="51" rx="93" ry="22"/><ellipse cx="500" cy="40" rx="49" ry="24"/><ellipse cx="551" cy="32" rx="56" ry="25"/><ellipse cx="595" cy="46" rx="58" ry="21"/>
+    <ellipse cx="771" cy="55" rx="44" ry="19"/><ellipse cx="750" cy="47" rx="33" ry="18"/>
+  </g>
+  <circle cx="624" cy="94" r="18" fill="#fff0b8" opacity=".65"/>
+  <path d="M693 5h18l69 223h-18zM739 5h10l41 141V5z" fill="#fff6d1" opacity=".1"/>
+  <path fill="#bdb6a2" d="M10 123h778v10H10z"/>
+  <!-- continuous row of pastel shop buildings -->
+  <g stroke="#d8d4c5" stroke-width="4">
+    <path fill="#eee3c8" d="M14 132h124v183H14z"/>
+    <path fill="#dfd3db" d="M139 132h130v183H139z"/>
+    <path fill="#e1ebdf" d="M270 132h130v183H270z"/>
+    <path fill="#eadfc9" d="M401 132h127v183H401z"/>
+    <path fill="#e5dce2" d="M530 132h129v183H530z"/>
+    <path fill="#e9e4d2" d="M660 132h130v183H660z"/>
+  </g>
+  <g stroke="#fff" stroke-width="3">
+    <path fill="url(#glass)" d="M29 146h39v42H29zM83 146h39v42H83z"/>
+    <path fill="#9ba7b7" d="M158 146h39v42h-39zM212 146h39v42h-39z"/>
+    <path fill="url(#glass)" d="M288 146h38v42h-38zM342 146h39v42h-39z"/>
+    <path fill="url(#glass)" d="M418 146h39v42h-39zM472 146h39v42h-39z"/>
+    <path fill="#a4afbd" d="M547 146h39v42h-39zM601 146h39v42h-39z"/>
+    <path fill="url(#glass)" d="M676 146h39v42h-39zM730 146h39v42h-39z"/>
+  </g>
+  <!-- signs -->
+  <g>
+    <path fill="#57977c" d="M21 200h109v17H21z"/><path fill="#bb4f49" d="M151 200h108v17H151z"/>
+    <path fill="#65b981" d="M280 200h109v17H280z"/><path fill="#4e69c6" d="M410 200h109v17H410z"/>
+    <path fill="#e9a05e" d="M539 200h109v17H539z"/><path fill="#8651a4" d="M669 200h109v17H669z"/>
+    <path fill="#fff" d="M321 202h21v13h-21z"/><path fill="#61bc79" d="M329 204h5v9h-5zm-4 3h13v4h-13z"/>
+  </g>
+  <!-- striped shop awnings -->
+  <g>
+    <path fill="#588e77" d="M14 226h124l-13 26H27z"/><path fill="#e9efe0" d="m14 226 18 0 8 20-12 0zm33 0h17l7 20H53zm34 0h17l6 20H87zm34 0h23l-10 20h-7z"/>
+    <path fill="#bc5149" d="M139 226h130l-13 26H152z"/><path fill="#f0e8de" d="M139 226h20l7 20h-13zm36 0h18l6 20h-16zm35 0h18l6 20h-16zm36 0h23l-11 20h-7z"/>
+    <path fill="#67b47a" d="M270 226h130l-13 26H283z"/><path fill="#e8f0e2" d="M270 226h20l7 20h-14zm36 0h18l6 20h-16zm35 0h18l6 20h-16zm36 0h23l-11 20h-7z"/>
+    <path fill="#4c68bd" d="M401 226h127l-13 26H414z"/><path fill="#e9e7df" d="M401 226h19l7 20h-13zm35 0h18l6 20h-16zm35 0h18l6 20h-16zm35 0h22l-10 20h-7z"/>
+    <path fill="#e6a05c" d="M530 226h129l-13 26H543z"/><path fill="#efe5d5" d="M530 226h20l7 20h-14zm36 0h18l6 20h-16zm35 0h18l6 20h-16zm36 0h22l-10 20h-7z"/>
+    <path fill="#8954a0" d="M659 226h131l-13 26H672z"/><path fill="#e7e2d5" d="M659 226h21l7 20h-15zm37 0h18l6 20h-16zm35 0h18l6 20h-16zm36 0h22l-10 20h-7z"/>
+  </g>
+  <!-- shaded shop entrances and storefront details -->
+  <g fill="#786d5f">
+    <path d="M27 252h99v63H27zM154 252h102v63H154zM284 252h102v63H284zM414 252h100v63H414zM543 252h102v63H543zM673 252h102v63H673z"/>
+    <path fill="#877a68" d="M28 252h19v63H28zM155 252h19v63h-19zM285 252h18v63h-18zM415 252h18v63h-18zM544 252h18v63h-18zM674 252h18v63h-18z"/>
+  </g>
+  <path fill="#d9bc91" d="M50 266h17v31H50zm25 0h17v31H75z"/><path fill="#a9663e" d="M53 271h11v19H53zm25 0h11v19H78z"/><path fill="#f3d092" d="M50 266h17v4H50zm25 0h17v4H75z"/>
+  <!-- palm at right edge -->
+  <path stroke="#806344" stroke-width="12" stroke-linecap="round" d="M765 319q-3-69-10-131"/>
+  <g stroke="#567f4e" stroke-width="2" stroke-linecap="round" fill="none">
+    <path d="M755 187q-45-27-87-2m88 2q-15-39-17-45m17 45q19-45 47-45m-47 45q39-32 72-24m-72 24q-40-13-65 7m65-7q-6-34 7-53m-7 53q25-27 47-29m-47 29q-22-23-38-25m38 25q-22-3-39 15m51-15q-5-19 3-37m3 37q23-17 45-12"/>
+    <path d="m690 185-13-8m23 7-10-14m19 12-5-15m25 18 4-17m12 17 13-14m-3 17 21-11m-8 13 23-6m-112 5-19 1m45-7-17-7m32 7 1-14m29 13 12-10m-4 14 16-4"/>
+  </g>
+  <g fill="#5b9257"><path d="M755 189q-31-22-20-47 18 6 20 47Zm2 0q3-41 25-48 5 26-25 48Zm-1 0q-38-24-32-42 22 4 32 42Zm0 1q35-38 63-29-13 22-63 29Zm1 0q-43-12-48 4 23 10 48-4Z"/></g>
+  <!-- sidewalk, curb, roadway -->
+  <path fill="#b4b0a5" d="M0 313h790v14H0z"/><path fill="#ddd9cf" d="M0 313h790v5H0z"/>
+  <path fill="url(#road)" d="M0 327h790v89H0z"/>
+  <path stroke="#ecebe3" stroke-width="4" stroke-dasharray="33 23" d="M0 388h790"/>
+  <!-- motorcycle -->
+  <g>
+    <circle cx="175" cy="356" r="24" fill="#252729"/><circle cx="175" cy="356" r="14" fill="#b9bdbe"/><circle cx="175" cy="356" r="7" fill="#45494b"/>
+    <circle cx="295" cy="356" r="24" fill="#252729"/><circle cx="295" cy="356" r="14" fill="#b9bdbe"/><circle cx="295" cy="356" r="7" fill="#45494b"/>
+    <path fill="#3262c1" d="M189 328q16-18 45-20l31 4 12 15-22 6-51 1z"/>
+    <path fill="#24292d" d="M211 311q17-8 41-6l-1 4-36 5z"/>
+    <path stroke="#333638" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" d="m190 341 23-25 47-1 35 41m-82-38-22 38m25-41 20-8m41 11 10-12 10 1"/>
+    <path stroke="#25292a" stroke-width="4" d="m236 314-20 28m46-27 12 28"/>
+    <path fill="#efd171" d="M281 291a6 6 0 1 0 0 12 6 6 0 0 0 0-12z"/><path stroke="#45413b" stroke-width="2" d="M273 302l-8 18"/>
+    <path stroke="#262a2b" stroke-width="4" stroke-linecap="round" d="m265 316 19-3m-6-5 9-13"/>
+  </g>
+</svg>

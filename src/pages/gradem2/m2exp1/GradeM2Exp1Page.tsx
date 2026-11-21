@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { LanguageSwitcher } from '../../../components/LanguageSwitcher'
 import { BackButton } from '../../../components/navigation/BackButton'
 import { NextButton } from '../../../components/navigation/NextButton'
-import streetIllustration from '../../../assets/grade-m2-street.svg'
+import streetIllustration from '../../../assets/grade-m2-shopfront.svg'
 import type { Language } from '../../../types/language'
 import './m2exp1.css'
 

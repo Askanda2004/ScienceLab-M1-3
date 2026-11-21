@@ -3,8 +3,8 @@ import { LanguageSwitcher } from '../components/LanguageSwitcher'
 import { BackButton } from '../components/navigation/BackButton'
 import type { Language } from '../types/language'
 import coastImage from '../assets/grade-m1-coast.svg'
-import circuitImage from '../assets/lab-circuit.svg'
-import reactionImage from '../assets/lab-chemistry.svg'
+import circuitImage from '../assets/grade-m2-shopfront.svg'
+import reactionImage from '../assets/grade-m3-riverbank.svg'
 import './grade-selection.css'
 
 const pageCopy = {

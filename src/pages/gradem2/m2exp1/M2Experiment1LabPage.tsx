@@ -49,11 +49,12 @@ const text = {
     back: 'ย้อนกลับ', title: 'ห้องทดลองจำลอง', experiment: 'การทดลองที่ 1',
     mystery: 'ปริศนาน้ำตาล\nก้นแก้วชาชัก', pisa: 'PISA 1 · อธิบายปรากฏการณ์',
     choose: 'เลือกตัวละลาย', temperature: 'อุณหภูมิน้ำ', water: 'น้ำ 100 g',
-    add: '+ เติม 1 ช้อน', stir: 'คน 10 วินาที', spoons: 'ช้อน', grams: 'g',
-    resetTrial: 'รีเซ็ตชุดนี้', resetTable: 'รีเซ็ตตาราง',
+    add: '+ เติม 1 ช้อน', addFive: '+ เติม 5 ช้อน', stir: 'คน 10 วินาที', spoons: 'ช้อน', grams: 'g',
+    resetTrial: 'เริ่มแก้วใหม่', resetTable: 'รีเซ็ตตาราง',
     dissolved: 'ละลายหมด เติมต่อได้', saturated: 'อิ่มตัวแล้ว ผลึกไม่หาย', stirring: 'กำลังคนให้ละลาย…',
     ready: 'เติมช้อนแล้วกดคน เพื่อดูว่าละลายหมดหรือไม่', amountAdded: 'ปริมาณที่เติม', amount: 'ปริมาณที่ละลายได้',
-    recordTitle: 'บันทึกผล', tempCol: 'อุณหภูมิ', spoonCol: 'ช้อนที่ละลาย', gramsCol: 'g / น้ำ 100 g',
+    addedLabel: 'ใส่ไปแล้ว', dissolvedLabel: 'ละลายแล้ว', leftoverLabel: 'เหลือก้นแก้ว',
+    recordTitle: 'บันทึกผล', tempCol: 'อุณหภูมิ', spoonCol: 'เหลือก้นแก้ว (g)', gramsCol: 'g / น้ำ 100 g',
     graphTitle: 'กราฟสภาพละลายได้', noData: 'บันทึกผลแต่ละอุณหภูมิเพื่อสร้างกราฟ',
     progress: 'อุณหภูมิที่บันทึก', seeResults: 'ดูผลการทดลอง', completeHint: 'บันทึกให้ครบทั้ง 4 อุณหภูมิของตัวละลายที่เลือกก่อนดูผล',
     principles: 'หลักการทดลองและตัวแปร', principlesList: [
@@ -68,11 +69,12 @@ const text = {
     back: 'Kembali', title: 'Makmal Simulasi', experiment: 'Eksperimen 1',
     mystery: 'Misteri gula di\ndasar teh tarik', pisa: 'PISA 1 · Menjelaskan fenomena',
     choose: 'Pilih bahan terlarut', temperature: 'Suhu air', water: 'Air 100 g',
-    add: '+ Tambah 1 sudu', stir: 'Kacau 10 saat', spoons: 'sudu', grams: 'g',
+    add: '+ Tambah 1 sudu', addFive: '+ Tambah 5 sudu', stir: 'Kacau 10 saat', spoons: 'sudu', grams: 'g',
     resetTrial: 'Set semula sesi ini', resetTable: 'Set semula jadual',
     dissolved: 'Larut sepenuhnya, boleh tambah', saturated: 'Tepu, kristal tidak larut', stirring: 'Sedang mengacau…',
     ready: 'Tambah satu sudu dan kacau untuk melihat sama ada ia larut', amountAdded: 'Jumlah ditambah', amount: 'Jumlah yang larut',
-    recordTitle: 'Rekod keputusan', tempCol: 'Suhu', spoonCol: 'Sudu larut', gramsCol: 'g / 100 g air',
+    addedLabel: 'Jumlah dimasukkan', dissolvedLabel: 'Jumlah larut', leftoverLabel: 'Baki di dasar',
+    recordTitle: 'Rekod keputusan', tempCol: 'Suhu', spoonCol: 'Baki tidak larut (g)', gramsCol: 'g / 100 g air',
     graphTitle: 'Graf keterlarutan', noData: 'Rekod setiap suhu untuk membina graf',
     progress: 'Suhu direkodkan', seeResults: 'Lihat keputusan', completeHint: 'Rekodkan keempat-empat suhu bagi bahan yang dipilih sebelum melihat keputusan',
     principles: 'Prinsip eksperimen dan pemboleh ubah', principlesList: [
@@ -87,11 +89,12 @@ const text = {
     back: 'Back', title: 'Virtual Laboratory', experiment: 'Experiment 1',
     mystery: 'The sugar at the\nbottom of the tea', pisa: 'PISA 1 · Explain phenomena',
     choose: 'Choose a solute', temperature: 'Water temperature', water: '100 g water',
-    add: '+ Add 1 spoon', stir: 'Stir for 10 seconds', spoons: 'spoons', grams: 'g',
+    add: '+ Add 1 spoon', addFive: '+ Add 5 spoons', stir: 'Stir for 10 seconds', spoons: 'spoons', grams: 'g',
     resetTrial: 'Reset this trial', resetTable: 'Reset table',
     dissolved: 'Dissolved; you can add more', saturated: 'Saturated; crystals remain', stirring: 'Stirring…',
     ready: 'Add one spoon and stir to check if it dissolves', amountAdded: 'Amount added', amount: 'Amount dissolved',
-    recordTitle: 'Experiment record', tempCol: 'Temperature', spoonCol: 'Spoons dissolved', gramsCol: 'g / 100 g water',
+    addedLabel: 'Added', dissolvedLabel: 'Dissolved', leftoverLabel: 'Left at bottom',
+    recordTitle: 'Experiment record', tempCol: 'Temperature', spoonCol: 'Undissolved (g)', gramsCol: 'g / 100 g water',
     graphTitle: 'Solubility graph', noData: 'Record each temperature to build the graph',
     progress: 'Temperatures recorded', seeResults: 'View results', completeHint: 'Record all four temperatures for the selected solute to view results',
     principles: 'Scientific principles and variables', principlesList: [
@@ -104,8 +107,9 @@ const text = {
   },
 } satisfies Record<Language, {
   back: string; title: string; experiment: string; mystery: string; pisa: string; choose: string;
-  temperature: string; water: string; add: string; stir: string; spoons: string; grams: string; resetTrial: string; resetTable: string;
+  temperature: string; water: string; add: string; addFive: string; stir: string; spoons: string; grams: string; resetTrial: string; resetTable: string;
   dissolved: string; saturated: string; stirring: string; ready: string; amountAdded: string; amount: string;
+  addedLabel: string; dissolvedLabel: string; leftoverLabel: string;
   recordTitle: string; tempCol: string; spoonCol: string; gramsCol: string; graphTitle: string;
   noData: string; progress: string; seeResults: string; completeHint: string; principles: string;
   principlesList: string[]; axisTemp: string; axisAmount: string; complete: string; language: string
@@ -126,7 +130,9 @@ export function M2Experiment1LabPage() {
   const displayedSpoonAdditions = savedMeasurement?.spoonAdditions ?? spoonAdditions
   const addedGrams = displayedSpoonAdditions * 10
   const isSaturated = !!savedMeasurement || message === 'saturated'
-  const dissolvedGrams = savedMeasurement?.grams ?? (isSaturated ? capacity : addedGrams)
+  const hasDissolutionResult = !!savedMeasurement || message === 'dissolved' || message === 'saturated'
+  const dissolvedGrams = savedMeasurement?.grams ?? (message === 'saturated' ? capacity : message === 'dissolved' ? addedGrams : 0)
+  const leftoverGrams = Math.max(0, addedGrams - dissolvedGrams)
   const completedTemperatures = temperatures.filter((value) => results[solute][value] !== undefined)
   const isSoluteComplete = completedTemperatures.length === temperatures.length
   const chartPoints = useMemo(() => temperatures.flatMap((value, index) => {
@@ -161,9 +167,9 @@ export function M2Experiment1LabPage() {
     setMessage('ready')
   }
 
-  function addSpoon() {
+  function addSpoons(amount: number) {
     if (isStirring || savedMeasurement) return
-    setSpoonAdditions((count) => count + 1)
+    setSpoonAdditions((count) => count + amount)
     setPendingStir(true)
     setMessage('ready')
   }
@@ -249,7 +255,10 @@ export function M2Experiment1LabPage() {
               <p className="m2-lab-water">{copy.water} · 1 {copy.spoons} = 10 g</p>
 
               <div className="m2-lab-buttons">
-                <button type="button" className="m2-lab-add" onClick={addSpoon} disabled={isStirring || !!savedMeasurement}>{copy.add}</button>
+                <div className="m2-lab-add-actions">
+                  <button type="button" className="m2-lab-add" onClick={() => addSpoons(1)} disabled={isStirring || !!savedMeasurement}>{copy.add}</button>
+                  <button type="button" className="m2-lab-add-five" onClick={() => addSpoons(5)} disabled={isStirring || !!savedMeasurement}>{copy.addFive}</button>
+                </div>
                 <button type="button" className="m2-lab-stir" onClick={stir} disabled={isStirring || !!savedMeasurement || !pendingStir}>
                   {isStirring ? copy.stirring : copy.stir}
                 </button>
@@ -261,6 +270,10 @@ export function M2Experiment1LabPage() {
               <div className={`m2-lab-status is-${message}`}>
                 {isStirring ? copy.stirring : message === 'saturated' || savedMeasurement ? copy.saturated : message === 'dissolved' ? copy.dissolved : copy.ready}
               </div>
+              <div className="m2-lab-temperature-display">
+                <span aria-hidden="true">🌡️</span>
+                <div><small>{copy.temperature}</small><strong>{temperature} °C</strong></div>
+              </div>
               <div className={`m2-lab-beaker is-${solute}`} aria-label={`${soluteNames[solute][language]}, ${addedGrams} g added, ${dissolvedGrams} g dissolved`}>
                 <div className="m2-lab-beaker-liquid" style={{ height: `${Math.max(8, Math.min(addedGrams / 400 * 75, 75))}%` }} />
                 <div className="m2-lab-solids">
@@ -270,8 +283,9 @@ export function M2Experiment1LabPage() {
                 {isStirring && <div className="m2-lab-stirrer" />}
               </div>
               <div className="m2-lab-live-readout">
-                <div><span>🌡️</span><strong>{temperature} °C</strong><small>{copy.temperature}</small></div>
-                <div><span>🥄</span><strong>{isSaturated || message === 'dissolved' ? dissolvedGrams : addedGrams} g</strong><small>{isSaturated || message === 'dissolved' ? copy.amount : copy.amountAdded}</small></div>
+                <div><small>{copy.addedLabel}</small><strong>{addedGrams} g</strong></div>
+                <div><small>{copy.dissolvedLabel}</small><strong>{hasDissolutionResult ? `${dissolvedGrams} g` : '—'}</strong></div>
+                <div><small>{copy.leftoverLabel}</small><strong>{hasDissolutionResult ? `${leftoverGrams} g` : '—'}</strong></div>
               </div>
               <p className="m2-lab-feedback">
                 {message === 'saturated' || savedMeasurement ? copy.saturated : message === 'dissolved' ? copy.dissolved : copy.ready}
@@ -289,9 +303,10 @@ export function M2Experiment1LabPage() {
                   <tbody>
                     {temperatures.map((value) => {
                       const measurement = results[solute][value]
+                      const undissolvedGrams = measurement ? Math.max(0, measurement.spoonAdditions * 10 - measurement.grams) : undefined
                       return <tr key={value} className={temperature === value ? 'is-current' : ''}>
                         <th scope="row">{value} °C</th>
-                        <td>{measurement ? (Number.isInteger(measurement.grams / 10) ? measurement.grams / 10 : (measurement.grams / 10).toFixed(1)) : '—'}</td>
+                        <td>{undissolvedGrams ?? '—'}</td>
                         <td>{measurement?.grams ?? '—'}</td>
                       </tr>
                     })}
@@ -319,7 +334,7 @@ export function M2Experiment1LabPage() {
               {!isSoluteComplete && <small className="m2-lab-result-hint">{copy.completeHint}</small>}
             </section>
 
-            <p className="m2-lab-workflow">ทำซ้ำ: เติม 1 ช้อน → คน → ดูผล · บันทึกครบ 4 อุณหภูมิ แล้วจึงดูผลได้</p>
+            <p className="m2-lab-workflow">ทำซ้ำ: เติม 1 หรือ 5 ช้อน → คน → ดูผล · บันทึกครบ 4 อุณหภูมิ แล้วจึงดูผลได้</p>
           </section>
         </div>
 

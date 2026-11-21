@@ -1,0 +1,70 @@
+.m2-exp2-results-page { min-height: 100vh; overflow-x: hidden; overflow-y: auto; font-family: 'IBM Plex Sans Thai', 'Manrope', sans-serif; }
+.m2-exp2-results-page .m2-objectives-content { width: min(100%, 1740px); padding-bottom: 32px; }
+.m2-exp2-results-layout { min-height: calc(100vh - 186px); align-items: start; }
+.m2-exp2-results-sidecard { align-self: start; gap: 12px; padding: 18px 16px 22px; }
+.m2-exp2-results-sidecard h3 { white-space: pre-line; }
+.m2-exp2-results-icon { width: min(100%, 190px); height: 145px; display: grid; place-items: center; font-size: 104px; line-height: 1; }
+.m2-exp2-results-panel { min-width: 0; display: flex; flex-direction: column; padding: clamp(17px, 1.5vw, 25px); border: 6px solid #ee9853; border-radius: 28px; background: #fff; box-shadow: 0 9px 0 #e8ba66, 0 15px 34px #24365326; }
+.m2-exp2-results-panel > h2 { margin: 0 0 12px; color: #29477f; font-size: clamp(22px, 2vw, 32px); line-height: 1.3; }
+.m2-exp2-results-columns { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(300px, .92fr); gap: 18px; align-items: stretch; }
+.m2-exp2-results-data { min-width: 0; display: flex; flex-direction: column; gap: 15px; }
+.m2-exp2-results-table-wrap { overflow-x: auto; border-radius: 17px; }
+.m2-exp2-results-table-wrap table { width: 100%; border-collapse: separate; border-spacing: 0 6px; color: #3c4c70; font-size: clamp(14px, 1.15vw, 19px); text-align: left; }
+.m2-exp2-results-table-wrap th, .m2-exp2-results-table-wrap td { padding: 12px 10px; }
+.m2-exp2-results-table-wrap thead th { background: #29477f; color: #fff; font-size: clamp(12px, 1vw, 17px); line-height: 1.25; }
+.m2-exp2-results-table-wrap thead th:first-child { border-radius: 14px 0 0 14px; }
+.m2-exp2-results-table-wrap thead th:last-child { border-radius: 0 14px 14px 0; }
+.m2-exp2-results-table-wrap tbody th, .m2-exp2-results-table-wrap tbody td { background: #f8e8d5; }
+.m2-exp2-results-table-wrap tbody tr:nth-child(even) th, .m2-exp2-results-table-wrap tbody tr:nth-child(even) td { background: #fff7ef; }
+.m2-exp2-results-table-wrap tbody th { color: #29477f; font-weight: 800; }
+.m2-exp2-results-table-wrap .concentration-value { font-weight: 800; }
+.m2-exp2-results-table-wrap tbody td span { display: inline-block; padding: 5px 8px; border-radius: 10px; background: #fbe3d9; color: #a94830; font-size: .84em; font-weight: 800; white-space: nowrap; }
+.m2-exp2-results-table-wrap tr.outcome-target td span { background: #e2f1e7; color: #3f8052; }
+.m2-exp2-results-table-wrap tr.outcome-slightly td span, .m2-exp2-results-table-wrap tr.outcome-dilute td span { background: #f8edcf; color: #946523; }
+.m2-exp2-results-summary { flex: 1; padding: 17px 19px; border-radius: 20px; background: #fbefdf; color: #37496e; }
+.m2-exp2-results-summary h3 { margin: 0 0 7px; color: #b95630; font-size: clamp(18px, 1.5vw, 25px); }
+.m2-exp2-results-summary p { margin: 0; font-size: clamp(14px, 1.1vw, 18px); line-height: 1.65; }
+.m2-exp2-results-chart-card { min-width: 0; display: flex; flex-direction: column; margin: 0; padding: 17px 15px 12px; border-radius: 20px; background: #f1f3f8; }
+.m2-exp2-results-chart-card figcaption { color: #34477f; font-size: clamp(17px, 1.45vw, 23px); font-weight: 800; }
+.m2-exp2-results-chart { width: 100%; height: auto; margin-top: 8px; overflow: visible; }
+.m2-exp2-results-chart text { fill: #697794; font: 13px 'IBM Plex Sans Thai', 'Manrope', sans-serif; }
+.m2-exp2-results-chart .m2-exp2-results-unit { fill: #34477f; font-weight: 800; font-size: 12px; }
+.m2-exp2-results-grid { stroke: #dce3ed; stroke-width: 1.2; }
+.m2-exp2-results-safe-zone { fill: #cce8d4; opacity: .9; }
+.m2-exp2-results-safe-label { fill: #3e7950 !important; font-size: 12px !important; font-weight: 800; }
+.m2-exp2-results-axis { stroke: #697590; stroke-width: 2; }
+.m2-exp2-results-trend { fill: none; stroke: #29477f; stroke-width: 2.5; stroke-dasharray: 7 5; }
+.m2-exp2-result-bar { fill: #dca94c; }
+.m2-exp2-result-high { fill: #d5684d; }
+.m2-exp2-result-target { fill: #438b5b; }
+.m2-exp2-result-slightly, .m2-exp2-result-dilute { fill: #dca94c; }
+.m2-exp2-results-value { fill: #34477f !important; font-size: 15px !important; font-weight: 800; }
+.m2-exp2-results-legend { display: flex; justify-content: center; flex-wrap: wrap; gap: 7px 12px; margin-top: 4px; color: #34477f; font-size: 12px; font-weight: 800; }
+.m2-exp2-results-legend span::before { content: ''; display: inline-block; width: 10px; height: 10px; margin-right: 6px; border-radius: 3px; vertical-align: -1px; background: #dca94c; }
+.m2-exp2-results-legend .legend-high::before { background: #d5684d; }
+.m2-exp2-results-legend .legend-target::before { background: #438b5b; }
+.m2-exp2-results-next { display: flex; justify-content: flex-end; margin-top: 12px; }
+.m2-exp2-results-next .m2-objectives-next { padding: 12px 26px; }
+@media (max-width: 900px) {
+  .m2-exp2-results-page .m2-objectives-header { grid-template-columns: 1fr; gap: 14px; }
+  .m2-exp2-results-layout { grid-template-columns: 1fr; min-height: 0; }
+  .m2-exp2-results-sidecard { display: grid; grid-template-columns: 145px 1fr; text-align: left; }
+  .m2-exp2-results-sidecard h2 { grid-column: 1 / -1; text-align: center; }
+  .m2-exp2-results-icon { grid-row: 2 / 4; width: 145px; height: 115px; font-size: 82px; }
+  .m2-exp2-results-sidecard h3 { align-self: end; }
+  .m2-exp2-results-sidecard .m2-pisa-badge { justify-self: start; }
+}
+@media (max-width: 650px) {
+  .m2-exp2-results-page .m2-objectives-content { padding: 16px 14px 28px; }
+  .m2-exp2-results-page .m2-objectives-header { margin-bottom: 15px; }
+  .m2-exp2-results-layout { gap: 14px; }
+  .m2-exp2-results-sidecard { grid-template-columns: 100px 1fr; gap: 8px 12px; padding: 12px; }
+  .m2-exp2-results-icon { grid-row: 2 / 4; width: 100px; height: 90px; font-size: 65px; }
+  .m2-exp2-results-panel { padding: 13px; border-width: 4px; border-radius: 19px; }
+  .m2-exp2-results-panel > h2 { font-size: 18px; }
+  .m2-exp2-results-columns { grid-template-columns: 1fr; gap: 12px; }
+  .m2-exp2-results-table-wrap table { min-width: 470px; font-size: 13px; }
+  .m2-exp2-results-table-wrap th, .m2-exp2-results-table-wrap td { padding: 9px 7px; }
+  .m2-exp2-results-summary { padding: 13px; }
+  .m2-exp2-results-chart-card { padding: 12px 10px; }
+}

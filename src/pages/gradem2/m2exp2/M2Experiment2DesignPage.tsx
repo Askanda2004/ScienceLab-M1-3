@@ -76,7 +76,7 @@ export function M2Experiment2DesignPage() {
               </div>
             </section>
             <div className="m2-objectives-actions">
-              <NextButton className="m2-objectives-next m2-design-start" label={copy.start} />
+            <NextButton className="m2-objectives-next m2-design-start" label={copy.start} href="/gradem2/m2exp2/lab" />
             </div>
           </div>
         </div>

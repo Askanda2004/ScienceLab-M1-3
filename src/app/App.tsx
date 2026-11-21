@@ -22,6 +22,12 @@ import { M2Experiment2ThinkingPage } from '../pages/gradem2/m2exp2/M2Experiment2
 import { M2Experiment2MaterialsPage } from '../pages/gradem2/m2exp2/M2Experiment2MaterialsPage'
 import { M2Experiment2ProcedurePage } from '../pages/gradem2/m2exp2/M2Experiment2ProcedurePage'
 import { M2Experiment2DesignPage } from '../pages/gradem2/m2exp2/M2Experiment2DesignPage'
+import { M2Experiment2LabPage } from '../pages/gradem2/m2exp2/M2Experiment2LabPage'
+import { M2Experiment2ResultsPage } from '../pages/gradem2/m2exp2/M2Experiment2ResultsPage'
+import { M2Experiment2AnswerPage } from '../pages/gradem2/m2exp2/M2Experiment2AnswerPage'
+import { M2Experiment2PisaPage } from '../pages/gradem2/m2exp2/M2Experiment2PisaPage'
+import { M2Experiment2SummaryPage } from '../pages/gradem2/m2exp2/M2Experiment2SummaryPage'
+import { M2Experiment2ComparisonPage } from '../pages/gradem2/m2exp2/M2Experiment2ComparisonPage'
 import { M2Experiment3ObjectivesPage } from '../pages/gradem2/m2exp3/M2Experiment3ObjectivesPage'
 import { M2Experiment3VocabularyPage } from '../pages/gradem2/m2exp3/M2Experiment3VocabularyPage'
 import { M2Experiment3ScienceSkillsPage } from '../pages/gradem2/m2exp3/M2Experiment3ScienceSkillsPage'
@@ -295,6 +301,30 @@ export function App() {
 
   if (currentPath === '/gradem2/m2exp2/design') {
     return <M2Experiment2DesignPage />
+  }
+
+  if (currentPath === '/gradem2/m2exp2/lab') {
+    return <M2Experiment2LabPage />
+  }
+
+  if (currentPath === '/gradem2/m2exp2/results') {
+    return <M2Experiment2ResultsPage />
+  }
+
+  if (currentPath === '/gradem2/m2exp2/answers') {
+    return <M2Experiment2AnswerPage />
+  }
+
+  if (currentPath === '/gradem2/m2exp2/pisa') {
+    return <M2Experiment2PisaPage />
+  }
+
+  if (currentPath === '/gradem2/m2exp2/summary') {
+    return <M2Experiment2SummaryPage />
+  }
+
+  if (currentPath === '/gradem2/m2exp2/comparison') {
+    return <M2Experiment2ComparisonPage />
   }
 
   if (currentPath === '/gradem2/m2exp3/objectives') {

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 440">
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#9bbddd"/><stop offset="1" stop-color="#f3edcf"/></linearGradient>
+    <linearGradient id="water" x2="0" y2="1"><stop stop-color="#80a9c9"/><stop offset="1" stop-color="#7ea5c3"/></linearGradient>
+    <linearGradient id="field" x2="0" y2="1"><stop stop-color="#bdcf80"/><stop offset="1" stop-color="#91ad58"/></linearGradient>
+    <filter id="cloudBlur"><feGaussianBlur stdDeviation="2"/></filter>
+    <pattern id="grass" width="34" height="31" patternUnits="userSpaceOnUse">
+      <path d="M6 29q-4-10-3-17m3 17q4-11 2-20m13 22q-3-9-1-15m1 15q5-9 5-18m5 19q-3-7-2-12" stroke="#769b49" stroke-width="1.4" fill="none"/>
+      <path d="M3 18l-3-4m8 8 4-5m9 4-3-5m7 10 4-5" stroke="#d4d98b" stroke-width="1.2"/>
+      <circle cx="15" cy="27" r="1.4" fill="#e1d586"/>
+    </pattern>
+  </defs>
+  <path fill="#e4bd6c" d="M0 0h780v3H0z"/>
+  <path fill="url(#sky)" d="M0 3h780v240H0z"/>
+  <g fill="#fff" opacity=".72" filter="url(#cloudBlur)">
+    <ellipse cx="184" cy="107" rx="129" ry="24"/><ellipse cx="200" cy="90" rx="75" ry="31"/><ellipse cx="224" cy="103" rx="100" ry="20"/>
+    <ellipse cx="595" cy="62" rx="90" ry="20"/><ellipse cx="638" cy="48" rx="70" ry="27"/><ellipse cx="699" cy="60" rx="74" ry="19"/>
+    <ellipse cx="510" cy="32" rx="52" ry="13"/><ellipse cx="526" cy="22" rx="31" ry="18"/>
+  </g>
+  <circle cx="383" cy="128" r="17" fill="#fff1c2" opacity=".9"/>
+  <!-- distant rounded hills -->
+  <path fill="#b7c2cc" d="M0 218q25-17 48-5 18-28 50-17 28-10 51 18 24-20 49-17 22 0 42 23 23-23 53-20 20 1 38 20 22-24 50-21 25 0 43 22 28-34 61-26 24 3 38 21 30-20 58-14 27-22 56-8 29 3 47 24 27-23 53-23 28-1 44 19v40H0z"/>
+  <path fill="#8fa88c" d="M0 230q32-10 58 2 27-25 56-16 25 3 39 20 30-20 58-15 26-17 52-3 18 7 27 19 25-12 51-2 25-19 48-7 18 5 26 18 26-19 50-8 20 6 31 14 27-26 50-13 22 8 32 17 20-14 43-6 20 0 37-14 25-16 48-5 24 7 37 19v25H0z"/>
+  <!-- water behind shoreline -->
+  <path fill="url(#water)" d="M381 243h399v197H388q-7-32-7-67z"/>
+  <!-- farmland -->
+  <path fill="url(#field)" d="M0 243h381q-10 44-8 97 0 54 14 100H0z"/>
+  <path fill="url(#grass)" d="M0 243h381q-10 44-8 97 0 54 14 100H0z"/>
+  <!-- distant tree -->
+  <path fill="#6f7950" d="M62 218h5v35h-5z"/><path fill="#538557" d="M45 220q-7-15 3-22 2-13 17-13 9 1 13 8 13 5 9 19-5 13-22 12-11 3-20-4z"/><path fill="#78a16a" d="M53 202q3-10 14-9 9 1 11 8-8 7-19 4z"/>
+  <!-- water shimmer -->
+  <g stroke="#c5d5d8" stroke-linecap="round" opacity=".65">
+    <path d="M588 277h21m-18 7h12m-145 27h20m-17 7h40m159-13h24m-24 7h13m-5 21h34m-27 8h13m-321 11h30m-23 13h47m84-5h32m-28 5h14m134-28h33m-28 7h25m-59 22h58m-12 7h29m-293 9h57m-13 15h36m190-10h54m-44 8h29m-255 8h68m-51 10h26m119-4h39m-21 8h53" stroke-width="2"/>
+  </g>
+  <!-- curved bank and pale sandy edge -->
+  <path fill="#ddceaa" d="M378 243q-11 47-9 98 0 57 14 99h10q-11-48-11-99 0-56 7-98z"/>
+  <path fill="#e9dfbf" d="M378 244q-9 46-9 96 0 52 11 86l5-1q-9-42-9-88 0-50 8-94z"/>
+  <!-- little mosque on far shore -->
+  <g transform="translate(640 214)"><path fill="#f5f0dc" d="M0 19h26v16H0z"/><path fill="#6fa991" d="M4 18q0-12 9-16 9 4 9 16z"/><path fill="#dce6d9" d="M25 3h5v32h-5z"/><path fill="#7eb5a0" d="m24 3 3-7 3 7z"/><path fill="#b9ccd0" d="M4 25h4v10H4zm8 0h4v10h-4z"/></g>
+  <!-- central palm trunk -->
+  <path fill="#9b7953" d="M378 378q2-66 6-139l11 0q-6 74-5 139z"/><path stroke="#75583f" stroke-width="2" d="m379 365 12-1m-11-12 12-1m-11-12 12-1m-10-12 12-1m-11-12 12-1m-10-12 12-1m-10-12 12-1m-9-12 12-1m-8-12 12-1m-8-12 12-1"/>
+  <!-- palm fronds -->
+  <g fill="none" stroke="#4f8454" stroke-width="2" stroke-linecap="round">
+    <path d="M385 240q-37-39-78-19m78 19q-24-41-36-47m36 47q-4-41 15-54m-15 54q17-45 49-44m-49 44q33-37 66-25m-66 25q-48-18-76 3m77-3q-8-25-3-46m5 46q20-32 41-37m-41 37q-19-27-37-32m37 32q-18-6-31 13m39-13q-4-24 8-39m1 39q27-27 50-23m-48 24q23-12 41-8"/>
+    <path d="m318 223-13-8m24 10-12-13m22 12-8-15m29 24 1-17m9 18 12-20m-7 22 20-17m-7 18 25-14m-6 16 27-7m-120 0-15 1m36-5-17-8m44 10-11-13m25 18 8-19m16 18 15-15m-8 19 21-10m-4 12 20-4"/>
+  </g>
+  <g fill="#5c965b"><path d="M385 241q-28-28-15-45 21 10 15 45Zm1 0q-2-42 19-50 8 23-19 50Zm-2 0q-36-25-28-42 23 5 28 42Zm3 0q21-43 48-38-2 23-48 38Zm0 1q36-36 67-24-14 23-67 24Zm-1 0q-45-14-67 4 25 13 67-4Z"/></g>
+  <!-- large decorated boat -->
+  <g>
+    <path fill="#b44742" d="M463 306q58 16 126 0l-12 16q-48 14-100 1z"/><path fill="#c85349" d="M463 306q-12-19-5-29 5-4 8 2l13 28zm126 0q12-18 7-29-5-5-8 2l-13 28z"/>
+    <path fill="#314f60" d="M465 310q55 13 120 0l-7 8q-54 12-106 0z"/>
+    <g><path fill="#4b8e69" d="m469 311 12 2-5 6z"/><path fill="#e2b147" d="m483 313 13 2-6 6z"/><path fill="#337b83" d="m498 314 13 2-6 6z"/><path fill="#c64e47" d="m513 315 13 1-7 6z"/><path fill="#528c65" d="m528 316 13 1-7 6z"/><path fill="#d7a744" d="m543 316 13 0-7 6z"/><path fill="#397b85" d="m558 316 13-1-7 7z"/><path fill="#bd5147" d="m573 314 13-2-7 8z"/></g>
+    <path stroke="#66513e" stroke-width="2" d="M526 260v47"/>
+  </g>
+  <!-- smaller boat in the distance -->
+  <g>
+    <path fill="#3e5673" d="M646 277q38 10 97 0l-8 11q-44 7-80 0z"/><path fill="#405b78" d="M646 277q-7-16-2-22 4-3 6 3l8 19zm97 0q7-16 3-22-4-3-6 3l-8 19z"/>
+    <path fill="#e1a843" d="M651 280h84l-5 6h-75z"/><path fill="#3b7986" d="m653 280 10 1-4 5zm17 2 11 1-5 4zm17 1h10l-5 4zm18 0 11-1-5 5zm18-2 10-1-5 5z"/>
+    <path stroke="#675541" stroke-width="2" d="M694 244v34"/><path fill="#e8bf4d" d="m681 254 12 24h-12z"/><path fill="#e7e8d9" d="m699 257 15 21h-15z"/>
+  </g>
+</svg>
